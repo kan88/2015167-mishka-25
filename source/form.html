@@ -51,6 +51,12 @@
           <li class="site-list__item">
             <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Распродажа</a>
+          </li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
@@ -76,18 +82,13 @@
             </a>
           </li>
         </ul>
+        <p class="site-list__text">Бесплатная доставка по России</p>
       </div>
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="visually-hidden">Страница формы заказа интернет-магазина Мишка.</h1>
     <section class="main-inner">
-      <div class="main-inner__wrapper main-inner-section">
-        <a class="main-inner-section__link" href="#">Новые поступления</a>
-        <a class="main-inner-section__link" href="#">Распродажа</a>
-        <span class="main-inner-section__text">Бесплатная доставка по России</span>
-        <h2 class="main-inner-section__title">Вязание на заказ</h2>
-      </div>
+      <h1 class="main-inner-section__title">Вязание на заказ</h1>
     </section>
     <section class="form-section">
       <div class="form__wrapper form">
@@ -119,42 +120,42 @@
             <ul class="checkbox__list">
               <li class="checkbox__item">
                 <label class="checkbox__label">
-                  <input class="checkbox__input visually-hidden" type="check" name="white" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="white" checked>
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__title">Белый</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__label">
-                  <input class="checkbox__input visually-hidden" type="check" name="gray" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="gray" checked>
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__title">Серый</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__label">
-                  <input class="checkbox__input visually-hidden" type="check" name="tiffany">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="tiffany">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__title">Тиффани</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__label">
-                  <input class="checkbox__input visually-hidden" type="check" name="black">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="black">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__title">Черный</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__label">
-                  <input class="checkbox__input visually-hidden" type="check" name="pink">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="pink">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__title">Розовый</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__label">
-                  <input class="checkbox__input visually-hidden" type="check" name="orange">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="orange">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__title">Оранжевый</span>
                 </label>
@@ -184,7 +185,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-inner__contacts contacts">
+          <fieldset class="form-inner__contacts number">
             <legend class="number__title">Тел</legend>
             <input class="number__input" type="tel" placeholder="+7 XXX XXX XX XX*" required>
             <svg class="number__icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
@@ -204,6 +205,8 @@
                   fill="black" />
               </g>
             </svg>
+          </fieldset>
+          <fieldset class="form-inner__mail mail">
             <legend class="mail__title">E-mail</legend>
             <input class="mail__input" type="email" placeholder="Ваш Email*" required>
             <svg class="mail__icon" width="32" height="21" viewBox="0 0 32 21" fill="none"
