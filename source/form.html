@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Мишка</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка форма заказа</title>
 </head>
 
-<body class="page__body">
+<body class="page__form">
   <header class="main-header">
     <a class="main-header__logo logo" href="#">
       <span class="visually-hidden">Интернет-магазин Мишка.</span>
@@ -87,156 +89,149 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="visually-hidden">Интернет-магазин Мишка.</h1>
-    <section class="main">
-      <div class="main__wrapper main-section">
-        <h2 class="main-section__title">Милые штуки ручной работы для дома</h2>
-        <ul class="main-section__list main-list">
-          <li class="main-list__item">
-            <a class="main-list__link" href="#">
-              <span class="main-list__text">Предметы интерьера</span>
-              <svg class="main-list__logo main-list__logo-interior" width="40" height="62" viewBox="0 0 40 62"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.5">
-                  <path
-                    d="M15.162 37.7167C14.8627 38.7119 14.9625 39.9061 15.162 41.2994C15.6607 43.8869 16.8577 47.2705 17.556 50.9527H22.6433C23.3415 47.3701 24.5385 43.9864 25.137 41.2994C25.4363 39.9061 25.4363 38.6124 25.137 37.7167C24.8378 36.821 24.2393 36.1244 23.142 35.4277H17.157C15.96 36.1244 15.3615 36.821 15.162 37.7167Z"
-                    fill="#149080" />
-                  <path
-                    d="M26.9327 57.6211H13.1671C11.8703 57.6211 10.8728 58.6163 10.8728 59.8105V61.9999H13.1671H26.9327H29.2269V59.8105C29.2269 58.6163 28.2294 57.6211 26.9327 57.6211Z"
-                    fill="#149080" />
-                  <path
-                    d="M34.015 2.18943H22.3441C22.3441 0.995194 21.3466 0 20.0499 0C18.7531 0 17.7556 0.995194 17.7556 2.18943H6.08478L0 27.5668C0.798005 27.0693 1.59602 26.5717 2.59352 26.5717C3.99003 26.5717 4.78803 27.3678 5.48629 27.9649C6.18454 28.562 6.68329 28.7611 6.88279 28.7611C7.18204 28.7611 7.68079 28.4625 8.37905 27.9649C9.0773 27.4673 9.97505 26.5717 11.2718 26.5717C12.5686 26.5717 13.4663 27.3678 14.1646 27.9649C14.8628 28.4625 15.3616 28.7611 15.6608 28.7611C15.7606 28.7611 15.9601 28.6616 16.2593 28.562C16.4588 28.4625 16.7581 28.164 17.1571 27.9649C17.6559 27.5668 18.2544 26.9697 19.1521 26.7707C19.4514 26.6712 19.7506 26.6712 20.0499 26.6712C21.3466 26.6712 22.2444 27.4673 22.9426 28.0644C23.6409 28.562 24.1397 28.8606 24.4389 28.8606C24.7382 28.8606 25.2369 28.562 25.8354 28.0644C26.5337 27.4673 27.4314 26.6712 28.7282 26.6712C30.1247 26.6712 30.9227 27.4673 31.621 28.0644C31.9202 28.363 32.2194 28.562 32.5187 28.6616C32.7182 28.7611 32.9177 28.8606 33.1172 28.8606C33.4165 28.8606 33.9152 28.562 34.5137 27.9649C35.212 27.3678 36.1097 26.5717 37.4065 26.5717C38.404 26.5717 39.202 27.0693 40 27.5668L34.015 2.18943Z"
-                    fill="#149080" />
-                  <path
-                    d="M23.4415 53.1426H16.5587C15.8604 53.1426 15.4614 53.6402 15.4614 54.2373C15.4614 54.8344 15.9602 55.332 16.5587 55.332H23.4415C24.1397 55.332 24.5387 54.8344 24.5387 54.2373C24.6385 53.6402 24.1397 53.1426 23.4415 53.1426Z"
-                    fill="#149080" />
-                  <path
-                    d="M20.0499 28.7598C19.9501 28.7598 19.7506 28.8593 19.4514 28.9588C19.2519 29.0583 19.0524 29.2574 18.8529 29.3569V33.0391H21.1471V29.4564C20.6484 29.0583 20.2494 28.7598 20.0499 28.7598Z"
-                    fill="#149080" />
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li class="main-list__item">
-            <a class="main-list__link" href="#">
-              <span class="main-list__text">Детские игрушки</span>
-              <svg class="main-list__logo main-list__logo-toy" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.5"
-                  d="M0 43.9933L27.4 60V36.5436L0 20.4362V43.9933ZM51.3 12.4832V15C51.3 16.8121 47.8 18.3221 43.6 18.3221C39.3 18.3221 35.9 16.8121 35.9 15V10.8725C36.2 12.5839 39.5 13.9933 43.6 13.9933C47.9 13.9933 51.3 12.4832 51.3 10.6711C51.3 8.85907 47.8 7.349 43.6 7.349C43.3 7.349 42.9 7.349 42.6 7.349L37.6 4.42954V7.55034C37.6 9.36242 34.1 10.8725 29.9 10.8725C27.2 10.8725 24.9 10.2685 23.5 9.36242C23.3 9.16108 23.1 8.95973 22.8 8.75839C22.4 8.3557 22.2 7.95302 22.2 7.55034V4.5302L17.4 7.349C17.1 7.349 16.7 7.349 16.3 7.349C12 7.349 8.60001 8.85907 8.60001 10.6711C8.60001 12.4832 12.1 13.9933 16.3 13.9933C20.4 13.9933 23.7 12.5839 24 10.8725V15C24 16.8121 20.5 18.3221 16.3 18.3221C12 18.3221 8.60001 16.8121 8.60001 15V12.5839L2.60001 16.1074L30.1 32.2148L57.5 16.2081L51.3 12.4832ZM37.7 22.7517C37.7 24.5638 34.2 26.0738 30 26.0738C25.7 26.0738 22.3 24.5638 22.3 22.7517V18.6242C22.6 20.3356 25.9 21.745 30 21.745C34.1 21.745 37.4 20.3356 37.7 18.6242V22.7517ZM32.6 36.745V60L60 43.9933V20.7383L32.6 36.745ZM29.9 6.6443C34.2 6.6443 37.6 5.13423 37.6 3.32215C37.6 1.51007 34.1 0 29.9 0C25.6 0 22.2 1.51007 22.2 3.32215C22.2 5.13423 25.6 6.6443 29.9 6.6443Z"
-                  fill="#149080" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <section class="main-inner">
+      <h1 class="main-inner__title">Вязание на заказ</h1>
     </section>
-    <section class="week-section">
-      <div class="week-section__wrapper week">
-        <h2 class="week__title section-title">Вязаные корзинки</h2>
-        <p class="week__text">Товар недели</p>
-        <p class="week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
-          размерах.
-        </p>
-        <dl class="week__list week-product">
-          <div class="week-product__wrapper">
-            <dt class="week-product__term">Цвет:</dt>
-            <dd class="week-product__description">тифанни/серый</dd>
-          </div>
-          <div class="week-product__wrapper">
-            <dt class="week-product__term">Диаметр:</dt>
-            <dd class="week-product__description">25 см</dd>
-          </div>
-          <div class="week-product__wrapper">
-            <dt class="week-product__term">Высота:</dt>
-            <dd class="week-product__description">15 см</dd>
-          </div>
-        </dl>
-        <img src="/images/week-product.jpg" alt="Вязанные корзинки." width="260" height="315">
-        <p class="week__price">Цена: 990 руб.</p>
-        <a class="week__link" href="#">Заказать</a>
-      </div>
-    </section>
-    <section class="about">
-      <div class="about__wrapper about-section">
-        <h2 class="about-section__title section-title">Коротко о нас:</h2>
-        <ul class="about-section__list about-list">
-          <li class="about-list__item">Экологически чистые материалы</li>
-          <li class="about-list__item">Скандинавский стиль по российской цене</li>
-          <li class="about-list__item">Увеличивает лайкина фотографиях</li>
-          <li class="about-list__item">Связано вручную с любовью и умилением</li>
-          <li class="about-list__item">Поддержка отечественного производителя</li>
-          <li class="about-list__item">Поставляется в подарочной упаковке</li>
-        </ul>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews__wrapper slider">
-        <h2 class="reviews__title section-title">Отзывы</h2>
-        <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
-            <blockquote class="reviews__quote">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
-                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Анастасия Красильникова</cite>
-              <p class="reviews__author-social">@misssssiskras</p>
-            </blockquote>
-          </li>
-          <li class="reviews__item slider__item">
-            <blockquote class="reviews__quote">
-              <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
-                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Екатерина Красильникова</cite>
-              <p class="reviews__author-social">@misssssiskras2</p>
-            </blockquote>
-          </li>
-          <li class="reviews__item slider__item">
-            <blockquote class="reviews__quote">
-              <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и
-                близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Елена Красильникова</cite>
-              <p class="reviews__author-social">@misssssiskras3</p>
-            </blockquote>
-          </li>
-        </ul>
-        <div class="reviews__buttons slider-toggle">
-          <button class="slider-toggle__button slider-toggle__button--previous">
-            <span class="visually-hidden">Назад.</span>
-            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
+    <section class="form-section">
+      <div class="form-section__wrapper form">
+        <h2 class="visually-hidden">Форма заказа</h2>
+        <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+          мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="form__unit form-inner" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form-inner__radio radio">
+            <legend class="radio__title">Тип</legend>
+            <ul class="radio__list">
+              <li class="radio__item">
+                <label class="radio__label">
+                  <input class="radio__input visually-hidden" type="radio" name="type" value="interior" checked>
+                  <span class="radio__mark"></span>
+                  <span class="radio__title">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="radio__item">
+                <label class="radio__label">
+                  <input class="radio__input visually-hidden" type="radio" name="type" value="interior">
+                  <span class="radio__mark"></span>
+                  <span class="radio__title">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-inner__checkbox checkbox">
+            <legend class="checkbox__title">Цвет</legend>
+            <ul class="checkbox__list">
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="white" checked>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__title">Белый</span>
+                </label>
+              </li>
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="gray" checked>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__title">Серый</span>
+                </label>
+              </li>
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="tiffany">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__title">Тиффани</span>
+                </label>
+              </li>
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="black">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__title">Черный</span>
+                </label>
+              </li>
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="pink">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__title">Розовый</span>
+                </label>
+              </li>
+              <li class="checkbox__item">
+                <label class="checkbox__label">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="orange">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__title">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-inner__name name">
+            <legend class="name__title">Фио</legend>
+            <ul class="name__list">
+              <li class="name__item">
+                <label class="name__label">
+                  <span class="name__title">Имя:</span>
+                  <input class="name__input" type="text" placeholder="Введите ваше имя*" required>
+                </label>
+              </li>
+              <li class="name__item">
+                <label class="name__label">
+                  <span class="name__title">Фамилия:</span>
+                  <input class="name__input" type="text" placeholder="Укажите фамилию*" required>
+                </label>
+              </li>
+              <li class="name__item">
+                <label class="name__label">
+                  <span class="name__title">Отчество:</span>
+                  <input class="name__input" type="text" placeholder="Отчество, если желаете">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-inner__contacts number">
+            <legend class="number__title">Тел</legend>
+            <label class="number__label">
+              <input class="number__input" type="tel" placeholder="+7 XXX XXX XX XX*" required>
+            </label>
+            <svg class="number__icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.2">
+                <path
+                  d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z"
+                  fill="black" />
+                <path
+                  d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4557 0 12.6008 0V1.48147Z"
+                  fill="black" />
+                <path
+                  d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z"
+                  fill="black" />
+                <path
+                  d="M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z"
+                  fill="black" />
+              </g>
             </svg>
-          </button>
-          <button class="slider-toggle__button slider-toggle__button--next">
-            <span class="visually-hidden">Вперед.</span>
-            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
+          </fieldset>
+          <fieldset class="form-inner__mail mail">
+            <legend class="mail__title">E-mail</legend>
+            <label class="mail__label">
+              <input class="mail__input" type="email" placeholder="Ваш Email*" required>
+            </label>
+            <svg class="mail__icon" width="32" height="21" viewBox="0 0 32 21" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z"
+                fill="black" />
             </svg>
-          </button>
-        </div>
-        <a class="reviews__link" href="#">Написать</a>
-      </div>
-    </section>
-    <section class="contacts">
-      <div class="contacts__wrapper contacts-section">
-        <h2 class="contacts-section__title section-title">Контакты</h2>
-        <dl class="contacts-section__list">
-          <div class="contacts-item">
-            <dt class="contacts-item__term">e-mail:</dt>
-            <dd class="contacts-item__description">
-              <a class="contacts-item__link" href="#">info@mimimishkashop.ru</a>
-            </dd>
-          </div>
-          <div class="contacts-item">
-            <dt class="contacts-item__term">адрес:</dt>
-            <dd class="contacts-item__description">г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101</dd>
-          </div>
-        </dl>
-        <img class="contacts-section__image" src="/images/map.jpg" alt="местоположение на карте." width="320"
-          height="454">
-        <a class="contacts-section__link" href="#">Напишите нам</a>
+          </fieldset>
+          <fieldset class="form-inner__option option">
+            <legend class="option__title">Доп</legend>
+            <label class="option__label">
+              <textarea class="option__textarea" rows="8" placeholder="Опишите все ваши пожелания к заказу"
+                name="textarea"></textarea>
+            </label>
+          </fieldset>
+          <button class="form-inner__button" type="submit">Отправить заказ</button>
+          <span class="form-inner__text">*Поля обязательны для заполнения</span>
+        </form>
       </div>
     </section>
   </main>
@@ -321,38 +316,6 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <form class="modal__form form-content" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="form-content__radio form-radio">
-        <legend class="form-radio__title">Выберите размер</legend>
-        <ul class="form-radio__list">
-          <li class="form-radio__item">
-            <label class="form-radio__label">
-              <input class="form-radio__input visually-hidden" type="radio" name="type" value="s" checked>
-              <span class="form-radio__mark"></span>
-              <span class="form-radio__title">S</span>
-            </label>
-          </li>
-          <li class="form-radio__item">
-            <label class="form-radio__label">
-              <input class="form-radio__input visually-hidden" type="radio" name="type" value="m">
-              <span class="form-radio__mark"></span>
-              <span class="form-radio__title">M</span>
-            </label>
-          </li>
-          <li class="form-radio__item">
-            <label class="form-radio__label">
-              <input class="form-radio__input visually-hidden" type="radio" name="type" value="l">
-              <span class="form-radio__mark"></span>
-              <span class="form-radio__title">L</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <button class="form-content__button" type="submit">Добавить</button>
-    </form>
-  </div>
 
 </body>
 
