@@ -1,7 +1,48 @@
-// Начните писать стили здесь
-body {
-  background: yellow;
-  main {
-    background-color: aqua;
-  }
-}
+@use "/source/sass/common/fonts.scss";
+@use "/source/sass/common/typography.scss";
+@use "/source/sass/blocks/main-header.scss";
+@use "/source/sass/blocks/logo.scss";
+@use "/source/sass/blocks/main-nav.scss";
+@use "/source/sass/blocks/site-list.scss";
+@use "/source/sass/blocks/user-list.scss";
+@use "/source/sass/blocks/extra-list.scss";
+@use "/source/sass/blocks/header-text.scss";
+@use "/source/sass/blocks/main-container.scss";
+@use "/source/sass/blocks/main-section.scss";
+@use "/source/sass/blocks/main-list.scss";
+@use "/source/sass/blocks/week-section.scss";
+@use "/source/sass/blocks/week.scss";
+@use "/source/sass/blocks/section-title.scss";
+@use "/source/sass/blocks/week-product.scss";
+@use "/source/sass/blocks/about.scss";
+@use "/source/sass/blocks/about-section.scss";
+@use "/source/sass/blocks/reviews.scss";
+@use "/source/sass/blocks/slider.scss";
+@use "/source/sass/blocks/slider-toggle.scss";
+@use "/source/sass/blocks/contacts.scss";
+@use "/source/sass/blocks/contacts-section.scss";
+@use "/source/sass/blocks/main-footer.scss";
+@use "/source/sass/blocks/footer-section.scss";
+@use "/source/sass/blocks/footer-logo.scss";
+@use "/source/sass/blocks/social.scss";
+@use "/source/sass/blocks/copyright.scss";
+@use "/source/sass/blocks/modal.scss";
+@use "/source/sass/blocks/form-content.scss";
+@use "/source/sass/blocks/form-radio.scss";
+@use "/source/sass/blocks/main-catalog-section.scss";
+@use "/source/sass/blocks/catalog-section.scss";
+@use "/source/sass/blocks/cards.scss";
+@use "/source/sass/blocks/card.scss";
+@use "/source/sass/blocks/video-section.scss";
+@use "/source/sass/blocks/video.scss";
+@use "/source/sass/blocks/description.scss";
+@use "/source/sass/blocks/main-inner.scss";
+@use "/source/sass/blocks/form-section.scss";
+@use "/source/sass/blocks/form.scss";
+@use "/source/sass/blocks/form-inner.scss";
+@use "/source/sass/blocks/radio.scss";
+@use "/source/sass/blocks/checkbox.scss";
+@use "/source/sass/blocks/name.scss";
+@use "/source/sass/blocks/number.scss";
+@use "/source/sass/blocks/mail.scss";
+@use "/source/sass/blocks/option.scss";
