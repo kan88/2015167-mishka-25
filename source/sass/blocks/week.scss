@@ -1,0 +1,14 @@
+.week {
+  position: relative;
+
+  &__title {
+    font-size: 53px;
+    line-height: 1.08;
+    padding-top: 61px;
+  }
+
+  &__text {
+    color: #63d1bb;
+    line-height: 1;
+  }
+}

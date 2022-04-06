@@ -1,0 +1,14 @@
+.form-radio {
+  &__title {
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 400;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    font-size: 17px;
+    line-height: 0.94;
+  }
+}

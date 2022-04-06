@@ -1,0 +1,10 @@
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  &__item {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}

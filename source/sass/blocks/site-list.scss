@@ -1,0 +1,10 @@
+.site-list {
+  display: flex;
+  list-style-type: none;
+
+  &__link {
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
