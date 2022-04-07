@@ -1,7 +1,8 @@
 // Общие стили
+@import "common/normalize.scss";
+@import "common/variables.scss";
 @import "common/fonts.scss";
 @import "common/typography.scss";
-@import "common/variables.scss";
 @import "blocks/main-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
@@ -24,6 +25,7 @@
 @import "blocks/slider-toggle.scss";
 @import "blocks/contacts.scss";
 @import "blocks/contacts-section.scss";
+@import "blocks/contacts-item.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/footer-section.scss";
 @import "blocks/footer-logo.scss";

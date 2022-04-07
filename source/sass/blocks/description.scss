@@ -1,20 +1,18 @@
-.description {
-  &__title {
-    font-size: 17px;
-    line-height: 1.41;
-  }
+.description__title {
+  font-size: 17px;
+  line-height: 1.41;
+}
 
-  &__text {
-    font-size: 17px;
-    line-height: 1.41;
-    font-weight: 400;
-  }
+.description__text {
+  font-size: 13px;
+  line-height: 1.87;
+  font-weight: 400;
+}
 
-  &__link {
-    font-size: 18px;
-    line-height: 0.89;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #444444;
-  }
+.description__link {
+  font-size: 18px;
+  line-height: 0.89;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $quinary;
 }

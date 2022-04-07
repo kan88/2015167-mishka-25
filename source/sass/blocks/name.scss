@@ -1,17 +1,15 @@
-.name {
-  &__headline {
-    font-size: 17px;
-    line-height: 1.06;
-    color: $primary;
-  }
+.name__headline {
+  font-size: 17px;
+  line-height: 1.06;
+  color: $primary;
+}
 
-  &__list {
-    list-style-type: none;
-  }
+.name__list {
+  list-style-type: none;
+}
 
-  &__title {
-    font-size: 17px;
-    line-height: 1.06;
-    font-weight: 700;
-  }
+.name__title {
+  font-size: 17px;
+  line-height: 1.06;
+  font-weight: 700;
 }

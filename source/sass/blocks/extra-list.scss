@@ -1,11 +1,12 @@
 .extra-list {
   display: flex;
   list-style-type: none;
+}
 
-  &__link {
-    text-decoration: none;
-    padding-top: 20px;
-    font-size: 15px;
-    line-height: 1.6;
-  }
+.extra-list__link {
+  text-decoration: none;
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $secondary;
 }

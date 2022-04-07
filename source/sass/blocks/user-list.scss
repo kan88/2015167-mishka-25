@@ -1,10 +1,11 @@
 .user-list {
   display: flex;
   list-style-type: none;
+}
 
-  &__link {
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
+.user-list__link {
+  text-decoration: none;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: $secondary;
 }
