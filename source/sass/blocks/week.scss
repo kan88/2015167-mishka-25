@@ -1,0 +1,27 @@
+.week {
+  position: relative;
+}
+
+.week__title {
+  font-size: 31px;
+  line-height: 1.2;
+  padding-top: 31px;
+}
+
+.week__text {
+  color: $primary;
+  line-height: 1.18;
+  text-transform: uppercase;
+}
+
+.week__description {
+  font-size: 15px;
+}
+
+.week__link {
+  font-size: 18px;
+  line-height: 1.11;
+  text-transform: uppercase;
+  color: $secondary;
+  text-decoration: none;
+}

@@ -1,0 +1,9 @@
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.about-list__item {
+  line-height: 1.17;
+}

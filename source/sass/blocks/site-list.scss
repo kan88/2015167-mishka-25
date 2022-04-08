@@ -1,0 +1,11 @@
+.site-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.site-list__link {
+  text-decoration: none;
+  padding-top: 29px;
+  padding-bottom: 27px;
+  color: $secondary;
+}
