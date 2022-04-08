@@ -1,6 +1,7 @@
 .site-list {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 .site-list__link {
@@ -8,4 +9,10 @@
   padding-top: 29px;
   padding-bottom: 27px;
   color: $secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
 }

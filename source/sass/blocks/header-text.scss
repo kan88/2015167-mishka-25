@@ -1,4 +1,12 @@
 .header-text {
+  display: none;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .header-text {
+    display: flex;
+    order: 3;
+  }
 }

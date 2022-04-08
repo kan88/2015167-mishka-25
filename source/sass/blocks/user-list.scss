@@ -1,6 +1,7 @@
 .user-list {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 .user-list__link {
@@ -8,4 +9,10 @@
   padding-top: 28px;
   padding-bottom: 28px;
   color: $secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    flex-direction: row;
+  }
 }
