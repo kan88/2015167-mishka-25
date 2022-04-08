@@ -1,0 +1,18 @@
+.slider-toggle__button {
+  background-color: $tertiary;
+  padding: 0;
+  margin: 0;
+  min-width: 130px;
+  border: 1px solid $octonary;
+  height: 52px;
+}
+
+.slider-toggle__button--next {
+  transform: rotate(180deg);
+}
+
+@media (min-width: $tablet-width) {
+  .slider-toggle__button {
+    border: none;
+  }
+}

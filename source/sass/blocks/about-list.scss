@@ -2,8 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  line-height: 1.17;
+  padding: 0;
+  text-align: left;
 }
 
-.about-list__item {
-  line-height: 1.17;
+@media (min-width: $tablet-width) {
+  .about-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+  }
 }

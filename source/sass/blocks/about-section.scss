@@ -1,0 +1,19 @@
+.about-section__title {
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .about-section__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-section__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+}

@@ -61,7 +61,7 @@
                 d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"
                 fill="black" />
             </svg>
-            <span class="visually-hidden">Поиск по сайту</span>
+            <span class="user-list__text-search">Поиск по сайту</span>
           </a>
         </li>
         <li class="user-list__item">
@@ -118,7 +118,7 @@
               </svg>
             </a>
           </li>
-          <li class="main-list__item">
+          <li class="main-list__item main-list__item-toy">
             <a class="main-list__link" href="#">
               <span class="main-list__text">Детские игрушки</span>
               <svg class="main-list__logo main-list__logo-toy" width="60" height="60" viewBox="0 0 60 60" fill="none"
@@ -134,7 +134,7 @@
     </section>
     <section class="week-section">
       <div class="week-section__wrapper week">
-        <h2 class="week__title section-title">Вязаные корзинки</h2>
+        <h2 class="week__title">Вязаные корзинки</h2>
         <p class="week__text">Товар недели</p>
         <p class="week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
           размерах.
@@ -160,22 +160,22 @@
     </section>
     <section class="about">
       <div class="about__wrapper about-section">
-        <h2 class="about-section__title section-title">Коротко о нас:</h2>
+        <h2 class="about-section__title">Коротко о нас:</h2>
         <ul class="about-section__list about-list">
-          <li class="about-list__item">Экологически чистые материалы</li>
-          <li class="about-list__item">Скандинавский стиль по российской цене</li>
-          <li class="about-list__item">Увеличивает лайкина фотографиях</li>
-          <li class="about-list__item">Связано вручную с любовью и умилением</li>
-          <li class="about-list__item">Поддержка отечественного производителя</li>
-          <li class="about-list__item">Поставляется в подарочной упаковке</li>
+          <li class="about-list__item about-list__item-eco">Экологически чистые материалы</li>
+          <li class="about-list__item about-list__item-price">Скандинавский стиль по российской цене</li>
+          <li class="about-list__item about-list__item-like">Увеличивает лайкина фотографиях</li>
+          <li class="about-list__item about-list__item-hand">Связано вручную с любовью и умилением</li>
+          <li class="about-list__item about-list__item-national">Поддержка отечественного производителя</li>
+          <li class="about-list__item about-list__item-present">Поставляется в подарочной упаковке</li>
         </ul>
       </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
-        <h2 class="reviews__title section-title">Отзывы</h2>
+        <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
+          <li class="reviews__item slider__item slider__item-none">
             <blockquote class="reviews__quote">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого
                 количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -184,7 +184,7 @@
               <p class="reviews__author-social">@misssssiskras</p>
             </blockquote>
           </li>
-          <li class="reviews__item slider__item">
+          <li class="reviews__item slider__item slider__item-none">
             <blockquote class="reviews__quote">
               <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
                 количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -206,13 +206,15 @@
         <div class="reviews__buttons slider-toggle">
           <button class="slider-toggle__button slider-toggle__button--previous">
             <span class="visually-hidden">Назад.</span>
-            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="slider-toggle__button-icon" width="50" height="26" viewBox="0 0 50 26" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
             </svg>
           </button>
           <button class="slider-toggle__button slider-toggle__button--next">
             <span class="visually-hidden">Вперед.</span>
-            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="slider-toggle__button-icon" width="50" height="26" viewBox="0 0 50 26" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
             </svg>
           </button>
@@ -222,7 +224,7 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrapper contacts-section">
-        <h2 class="contacts-section__title section-title">Контакты</h2>
+        <h2 class="contacts-section__title">Контакты</h2>
         <dl class="contacts-section__list">
           <div class="contacts-item">
             <dt class="contacts-item__term">e-mail:</dt>
