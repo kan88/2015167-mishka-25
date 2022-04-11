@@ -1,0 +1,16 @@
+.logo__icon {
+  height: 79px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__icon {
+    height: 89px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__icon {
+    height: 89px;
+    order: 2;
+  }
+}

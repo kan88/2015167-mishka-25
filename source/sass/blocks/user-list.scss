@@ -1,11 +1,23 @@
 .user-list {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 .user-list__link {
+  display: block;
   text-decoration: none;
   padding-top: 28px;
   padding-bottom: 28px;
   color: $secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    flex-direction: row;
+  }
+
+  .user-list__text-search {
+    display: none;
+  }
 }

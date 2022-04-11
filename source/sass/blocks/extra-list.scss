@@ -1,5 +1,4 @@
 .extra-list {
-  display: flex;
   list-style-type: none;
 }
 
@@ -9,4 +8,11 @@
   font-size: 15px;
   line-height: 1.6;
   color: $secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-list {
+    flex-direction: row;
+    order: 3;
+  }
 }

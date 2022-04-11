@@ -1,4 +1,12 @@
 .social__list {
   display: flex;
   list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social__link {
+  display: flex;
+  height: 80px;
+  align-items: center;
 }
