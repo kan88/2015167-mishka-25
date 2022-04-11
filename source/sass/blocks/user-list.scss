@@ -2,22 +2,57 @@
   display: flex;
   list-style-type: none;
   align-items: center;
+
+  &--close {
+    display: none;
+  }
 }
 
 .user-list__link {
+  position: relative;
   display: block;
   text-decoration: none;
   padding-top: 28px;
   padding-bottom: 28px;
   color: $secondary;
+  min-width: 82px;
 }
 
 @media (min-width: $tablet-width) {
   .user-list {
     flex-direction: row;
+
+    &--close {
+      display: flex;
+    }
   }
 
   .user-list__text-search {
     display: none;
+  }
+
+  .user-list__text {
+    padding-left: 80px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .user-list__icon-search {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .user-list__icon-cart {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-left: 31px;
   }
 }
