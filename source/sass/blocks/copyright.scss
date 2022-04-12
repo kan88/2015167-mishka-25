@@ -1,5 +1,6 @@
 .copyright {
   display: flex;
+  align-items: center;
 }
 
 .copyright__text {
@@ -11,5 +12,7 @@
 }
 
 .copyright__link {
+  display: flex;
   height: 80px;
+  align-items: center;
 }
