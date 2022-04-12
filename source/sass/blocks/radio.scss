@@ -1,15 +1,57 @@
-.radio__list {
-  list-style-type: none;
+.radio {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .radio__headline {
+  display: block;
   font-size: 17px;
   line-height: 0.94;
   color: $primary;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-left: 29px;
 }
 
 .radio__title {
   font-size: 17px;
   line-height: 1.06;
   font-weight: 700;
+}
+
+.radio__list {
+  list-style-type: none;
+  margin: 0;
+  text-align: left;
+  padding-left: 61px;
+  width: 200px;
+  margin-bottom: 43px;
+}
+
+.radio__item {
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .radio {
+    display: flex;
+    padding: 65px 50px 69px 50px;
+  }
+
+  .radio__title {
+    font-size: 19px;
+    line-height: 0.96;
+    font-weight: 700;
+  }
+
+  .radio__list {
+    width: 460px;
+  }
+
+  .radio__item {
+    margin-bottom: 58px;
+  }
 }
