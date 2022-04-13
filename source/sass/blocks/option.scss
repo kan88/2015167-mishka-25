@@ -1,5 +1,40 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-bottom: 17px;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
 .option__title {
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 0.94;
   color: $primary;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.option__textarea {
+  display: block;
+  min-width: 260px;
+  min-height: 142px;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .option {
+    display: flex;
+    padding: 50px 50px 53px 50px;
+    margin: 0;
+  }
+
+  .option__textarea {
+    background-color: $septenary;
+  }
 }

@@ -1,10 +1,12 @@
 .card {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.card__title {
-  font-size: 17px;
-  line-height: 1.41;
+.card__wrapper {
+  padding: 28px;
+  position: relative;
 }
 
 .card__title-link {
@@ -12,13 +14,86 @@
   color: $secondary;
 }
 
+.card__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.41;
+  margin-bottom: 9px;
+  text-align: left;
+}
+
 .card__info {
+  margin: 0;
   font-size: 13px;
   line-height: 2.3;
   font-weight: 400;
+  text-align: left;
+  padding-bottom: 39px;
 }
 
 .card__price {
+  display: block;
   font-size: 15px;
   line-height: 1.6;
+  text-align: left;
+}
+
+.card__cart-link {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .card__item {
+    display: flex;
+  }
+
+  .card__wrapper {
+    padding-left: 34px;
+    min-width: 335px;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 7px;
+  }
+
+  .card__info {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 197px;
+  }
+
+  .card__cart-link {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    display: flex;
+  }
+
+  .card__item {
+    flex-direction: column;
+  }
+
+  .card__wrapper {
+    padding: 27px;
+    position: relative;
+    padding-left: 34px;
+    min-width: 316px;
+  }
+
+  .card__title {
+    margin-bottom: 6px;
+  }
+
+  .card__info {
+    margin-bottom: 60px;
+  }
 }

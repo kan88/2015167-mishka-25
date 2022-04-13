@@ -1,15 +1,72 @@
+.name {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 34px;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
 .name__headline {
+  display: block;
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 0.94;
   color: $primary;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .name__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .name__title {
+  display: block;
   font-size: 17px;
   line-height: 1.06;
   font-weight: 700;
+  text-align: left;
+}
+
+.name__input {
+  display: block;
+  border: none;
+  border-bottom: 2px solid $secondary;
+  text-align: left;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 260px;
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .name {
+    display: flex;
+    padding: 65px 50px 69px 50px;
+  }
+
+  .name__title {
+    display: block;
+    font-size: 19px;
+    line-height: 0.96;
+    padding-top: 15px;
+  }
+
+  .name__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name__item {
+    padding-left: 80px;
+    width: 400px;
+  }
+
+  .name__label {
+    display: flex;
+  }
 }

@@ -1,0 +1,15 @@
+.video-section {
+  padding: 0 30px 30px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-section {
+    padding: 0 50px 64px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-section {
+    padding: 0 50px 105px 50px;
+  }
+}

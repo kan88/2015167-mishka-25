@@ -1,4 +1,15 @@
-.video {
+.video__title {
+  margin: 0;
+  margin-bottom: 27px;
+  padding-top: 21px;
+  padding-left: 91px;
+  font-size: 17px;
+  line-height: 1.41;
+  width: 156px;
+  text-align: left;
+}
+
+.video__play {
   position: relative;
 }
 
@@ -8,8 +19,131 @@
   width: 100px;
   height: 77px;
   position: absolute;
-  top: 30px;
-  left: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   background-color: transparent;
   border: none;
+  padding: 0;
+}
+
+.video__text {
+  margin: 0;
+  margin-bottom: 41px;
+  font-size: 13px;
+  line-height: 1.87;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 34px;
+  padding-top: 35px;
+}
+
+.video__link {
+  display: block;
+  font-size: 18px;
+  line-height: 0.89;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $quinary;
+  border: 2px solid $quinary;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 192px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .video__play {
+    order: 1;
+    margin-bottom: 41px;
+  }
+
+  .video__title {
+    order: 2;
+    width: 271px;
+    padding-left: 107px;
+    font-size: 20px;
+    line-height: 1.2;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/camera.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 42px;
+      width: 32px;
+      height: 22px;
+    }
+  }
+
+  .video__text {
+    order: 3;
+    padding-left: 40px;
+    width: 611px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .video__link {
+    order: 4;
+    width: 584px;
+    font-size: 17px;
+    line-height: 0.96;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    display: grid;
+    grid-template-columns: 683px 400px;
+    grid-template-rows: 168px 172px 115px;
+  }
+
+  .video__play {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .video__title {
+    margin-bottom: 27px;
+    padding-left: 79px;
+    padding-top: 96px;
+    width: 178px;
+
+
+    &::before {
+      content: "";
+      background-image: url("../img/camera.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 80px;
+      width: 32px;
+      height: 22px;
+    }
+  }
+
+  .video__text {
+    width: 252px;
+    padding-top: 0;
+    padding-left: 79px;
+  }
+
+  .video__link {
+    width: 230px;
+    margin-bottom: 60px;
+  }
 }

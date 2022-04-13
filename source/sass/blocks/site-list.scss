@@ -2,6 +2,10 @@
   display: flex;
   list-style-type: none;
   align-items: center;
+
+  &--close {
+    display: none;
+  }
 }
 
 .site-list__link {
@@ -15,5 +19,17 @@
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
+
+    &--close {
+      display: flex;
+    }
+  }
+
+  .site-list__item {
+    font-size: 15px;
+  }
+
+  .site-list__link {
+    padding-top: 20px;
   }
 }

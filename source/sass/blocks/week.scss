@@ -34,7 +34,8 @@
   text-transform: uppercase;
   color: $quinary;
   text-decoration: none;
-  padding: 16px 70px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 2px solid $quinary;
   margin-bottom: 45px;
   margin-left: auto;
@@ -86,10 +87,11 @@
 
   .week__link {
     display: block;
-    width: 172px;
+    width: 292px;
     margin-left: 0;
     margin-right: auto;
-    padding: 16px 86px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 

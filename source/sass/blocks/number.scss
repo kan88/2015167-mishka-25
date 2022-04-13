@@ -1,5 +1,50 @@
+.number {
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-bottom: 34px;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
 .number__title {
+  display: block;
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 0.94;
   color: $primary;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.number__input {
+  display: block;
+  border: none;
+  border-bottom: 2px solid $secondary;
+  text-align: left;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 260px;
+  margin-bottom: 22px;
+}
+
+.number__icon {
+  position: absolute;
+  bottom: 35px;
+  left: 230px;
+}
+
+@media (min-width: $tablet-width) {
+  .number {
+    display: flex;
+    padding: 0 50px;
+    background-color: $septenary;
+    margin: 0;
+  }
+
+  .number__input {
+    background-color: $septenary;
+  }
 }

@@ -1,5 +1,20 @@
 .form__text {
-  margin-top: 17px;
   font-size: 13px;
   line-height: 1.85;
+  text-align: left;
+  font-weight: 400;
+  width: 260px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__text {
+    font-size: 17px;
+    line-height: 1.85;
+    width: 668px;
+    margin-bottom: 63px;
+  }
 }
