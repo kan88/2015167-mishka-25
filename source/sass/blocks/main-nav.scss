@@ -4,10 +4,6 @@
   flex-direction: column;
 }
 
-.main-nav__logo {
-  height: 79px;
-}
-
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -17,6 +13,25 @@
 
 .main-nav__toggle {
   position: absolute;
+  top: 32px;
+  right: 31px;
+  border: 0;
+  padding: 0;
+  background-color: $tertiary;
+}
+
+.main-nav__toggle--open {
+  background-image: url("../img/menu/toggle-close.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 14px;
+}
+
+.main-nav__toggle--close {
+  background-image: url("../img/menu/toggle-open.svg");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 20px;
 }
 
 .main-nav__extra {

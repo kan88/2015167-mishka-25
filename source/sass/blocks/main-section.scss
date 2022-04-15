@@ -1,21 +1,30 @@
 .main-section {
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-color: $septenary;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 164px;
+  position: relative;
+  bottom: 17px;
 }
 
 .main-section__title {
   font-size: 27px;
-  padding-top: 73px;
-  padding-bottom: 120px;
+  padding-top: 90px;
   margin: 0 auto;
+  padding-bottom: 193px;
   line-height: 1.11;
+  width: 260px;
 }
 
 .main-section__list {
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 300px;
 }
 
 @media (min-width: $tablet-width) {

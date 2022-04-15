@@ -1,10 +1,24 @@
+.slider-toggle {
+  display: flex;
+}
+
 .slider-toggle__button {
   background-color: $tertiary;
   padding: 0;
   margin: 0;
-  min-width: 130px;
+  width: 130px;
   border: 1px solid $octonary;
   height: 52px;
+  position: relative;
+}
+
+.slider-toggle__button-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .slider-toggle__button--next {

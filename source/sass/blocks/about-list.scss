@@ -4,8 +4,81 @@
   list-style-type: none;
   line-height: 1.17;
   padding: 0;
+  margin: 0;
   text-align: left;
 }
+
+.about-list__item {
+  padding-top: 83px;
+  position: relative;
+}
+
+.about-list__item--eco::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/decor-icon/eco.svg");
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 38px;
+  top: 28px;
+  left: 8px;
+}
+
+.about-list__item--price::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/decor-icon/price.svg");
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 27px;
+  top: 28px;
+  left: 8px;
+}
+
+.about-list__item--like::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/decor-icon/like.svg");
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 27px;
+  top: 28px;
+  left: 8px;
+}
+
+.about-list__item--hand::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/decor-icon/hand.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 34px;
+  top: 28px;
+  left: 8px;
+}
+
+.about-list__item--national::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/decor-icon/national.svg");
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 23px;
+  top: 28px;
+  left: 8px;
+}
+
+.about-list__item--present::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/decor-icon/present.svg");
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 32px;
+  top: 28px;
+  left: 8px;
+}
+
 
 @media (min-width: $tablet-width) {
   .about-list {

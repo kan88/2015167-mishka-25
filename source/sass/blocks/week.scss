@@ -1,10 +1,20 @@
 .week {
   position: relative;
-  padding: 0 30px;
+  padding: 0 30px 73px 30px;
+
+  &::before {
+    content: "";
+    background-image: url("../img/decor-icon/zigzag-decor.svg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 31px;
+    height: 6px;
+  }
 }
 
 .week__title {
-  font-size: 31px;
+  font-size: 25px;
   line-height: 1.2;
   padding: 0;
   margin: 0;
@@ -13,6 +23,7 @@
 
 .week__text {
   margin: 0;
+  margin-bottom: 17px;
   text-align: left;
   color: $primary;
   line-height: 1.18;
@@ -21,10 +32,23 @@
 
 .week__description {
   margin: 0;
+  margin-bottom: 12px;
   text-align: left;
   font-size: 15px;
   line-height: 1.6;
   font-weight: 400;
+}
+
+.week__link-image {
+  display: block;
+  margin-bottom: 26px;
+  width: 260px;
+  height: 315px;
+}
+
+.week__price {
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .week__link {
@@ -37,12 +61,15 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border: 2px solid $quinary;
-  margin-bottom: 45px;
   margin-left: auto;
   margin-right: auto;
   width: 260px;
 }
 
+.week__list {
+  margin: 0;
+  margin-bottom: 28px;
+}
 
 @media (min-width: $tablet-width) {
   .week {

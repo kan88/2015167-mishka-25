@@ -1,4 +1,6 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  z-index: 1;
+  background-color: $tertiary;
 }

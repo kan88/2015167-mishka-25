@@ -1,7 +1,6 @@
 .main-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 31px;
 }
 
 .main-list__item {
@@ -20,9 +19,7 @@
   color: $tertiary;
   font-size: 19px;
   line-height: 1.26;
-  padding-top: 24px;
-  padding-bottom: 31px;
-  padding-left: 30px;
+  padding: 24px 80px 31px 30px;
   text-align: left;
   position: relative;
 }

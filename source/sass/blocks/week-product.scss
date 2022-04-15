@@ -1,15 +1,23 @@
 .week-product__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 97px auto;
+  text-align: left;
+  border-bottom: 1px solid $senary;
 }
 
 .week-product__term {
   font-size: 15px;
   line-height: 1.33;
   font-weight: 400;
+  padding-bottom: 4px;
+  padding-top: 4px;
 }
 
 .week-product__description {
   font-size: 15px;
   line-height: 1.33;
   font-weight: 400;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 4px;
 }
