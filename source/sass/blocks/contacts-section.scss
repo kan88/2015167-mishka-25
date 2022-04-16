@@ -25,8 +25,8 @@
   text-transform: uppercase;
   color: $quinary;
   text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   border: 2px solid $quinary;
   margin-bottom: 39px;
   margin-left: auto;
@@ -41,16 +41,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts-section::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/decor-icon/flag.svg");
+    width: 47px;
+    height: 81px;
+    right: 50px;
+    top: 0;
+  }
+
   .contacts-section__title {
     font-size: 43px;
     line-height: 1.16;
-    padding-top: 68px;
+    padding-top: 22px;
     padding-left: 50px;
   }
 
   .contacts-section__list {
     padding: 0 50px;
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 49px;
   }
 
   .contacts-section__image {
@@ -60,11 +72,18 @@
   .contacts-section__link {
     font-size: 17px;
     line-height: 1.17;
-    padding: 16px 28px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     margin-bottom: 57px;
     margin-left: auto;
     margin-right: auto;
     width: 230px;
+  }
+
+  .contacts-section__map {
+    width: 768px;
+    height: 457px;
+    margin-bottom: 55px;
   }
 }
 

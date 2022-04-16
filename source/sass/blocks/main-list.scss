@@ -26,8 +26,16 @@
 
 .main-list__logo {
   position: absolute;
-  right: 30px;
-  top: 20px;
+}
+
+.main-list__logo-interior {
+  right: 36px;
+  top: 23px;
+}
+
+.main-list__logo-toy {
+  right: 27px;
+  top: 21px;
 }
 
 .main-list__text {
@@ -38,6 +46,22 @@
 @media (min-width: $tablet-width) {
   .main-list {
     flex-direction: row;
-    padding: 0 52px;
+    padding: 0 50px;
+  }
+
+  .main-list__link {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 25px 80px 34px 30px;
+  }
+
+  .main-list__logo-interior {
+    right: 36px;
+    top: 30px;
+  }
+
+  .main-list__logo-toy {
+    right: 33px;
+    top: 31px;
   }
 }

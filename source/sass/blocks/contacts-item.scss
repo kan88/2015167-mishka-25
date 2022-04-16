@@ -29,6 +29,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts-item {
+    display: grid;
+    grid-template-columns: 78px 230px;
+    text-align: left;
+  }
+
   .contacts-item__term {
     font-size: 17px;
     line-height: 1.76;
@@ -42,6 +48,6 @@
   .contacts-item__description {
     font-size: 17px;
     line-height: 1.76;
-    width: 256px;
+    width: 208px;
   }
 }

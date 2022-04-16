@@ -10,6 +10,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-section {
+    padding: 0 50px 82px 50px;
+  }
+
   .about-section__title {
     font-size: 43px;
     line-height: 1.16;

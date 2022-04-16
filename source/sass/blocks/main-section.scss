@@ -4,7 +4,6 @@
   background-color: $septenary;
   background-size: cover;
   background-position: center;
-  margin-bottom: 164px;
   position: relative;
   bottom: 17px;
 }
@@ -28,12 +27,34 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-section {
+    position: static;
+  }
+
   .main-section__title {
     font-size: 43px;
     padding-top: 155px;
-    padding-bottom: 372px;
+    padding-bottom: 491px;
     line-height: 1.16;
-    max-width: 700px;
+    width: 700px;
+  }
+
+  .main-section__list {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 716px;
+
+    &::before {
+      content: "";
+      height: 24px;
+      width: 100%;
+      background-image: url("../img/decor-icon/zigzag-fill.svg");
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 

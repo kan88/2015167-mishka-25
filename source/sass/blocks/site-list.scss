@@ -3,14 +3,12 @@
   display: flex;
   list-style-type: none;
   text-align: left;
+  cursor: pointer;
+  padding-left: 25px;
 
   &--close {
     display: none;
   }
-}
-
-.site-list--no-js {
-  position: static;
 }
 
 .site-list--closed {
@@ -24,7 +22,7 @@
 .site-list__link {
   display: block;
   text-decoration: none;
-  padding: 28px 60px 27px 76px;
+  padding: 22px 25px;
   color: $secondary;
 }
 
@@ -39,6 +37,7 @@
 
   .site-list__item {
     font-size: 15px;
+    box-shadow: none;
   }
 
   .site-list__link {

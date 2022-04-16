@@ -1,0 +1,9 @@
+.main__wrapper {
+  margin-bottom: 164px;
+}
+
+@media (min-width: $tablet-width) {
+  .main__wrapper {
+    margin-bottom: 52px;
+  }
+}

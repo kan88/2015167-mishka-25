@@ -84,7 +84,13 @@
   .about-list {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 265px 325px;
+    grid-template-rows: 141px 154px 155px;
+    column-gap: 70px;
+  }
+
+  .about-list__item {
+    padding-top: 97px;
+    position: relative;
   }
 }

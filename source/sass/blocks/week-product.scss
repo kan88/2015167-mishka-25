@@ -21,3 +21,19 @@
   padding-bottom: 4px;
   padding-top: 4px;
 }
+
+@media (min-width: $tablet-width) {
+  .week-product {
+    width: 292px;
+  }
+
+  .week-product__term {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  .week-product__description {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+}

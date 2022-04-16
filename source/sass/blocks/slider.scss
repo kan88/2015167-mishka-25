@@ -1,22 +1,12 @@
 .slider {
   padding: 0 30px 89px 30px;
-
-  &::before {
-    content: "";
-    background-image: url("../img/decor-icon/zigzag-decor.svg");
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 38px;
-    height: 6px;
-  }
 }
 
 .slider__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 .slider__item-none {
@@ -29,7 +19,14 @@
     background-image: url("../img/review-background.jpg");
     background-repeat: no-repeat;
     background-color: $tertiary;
-    padding: 0 50px;
+    background-size: 350px 457px;
+    padding: 0 50px 178px 50px;
+  }
+
+  .slider__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 }
 
