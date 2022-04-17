@@ -145,39 +145,41 @@
 
 @media (min-width: $desktop-width) {
   .week {
-    padding: 0 225px;
+    padding: 0 225px 96px 225px;
+    margin-bottom: 68px;
+
+    &::before {
+      left: 50px;
+      right: 50px;
+    }
   }
+
 
   .week__title {
-    padding-top: 61px;
-  }
-
-  .week__text {
-    line-height: 1;
-    width: 100px;
-    position: absolute;
-    top: 69px;
-    left: 32px;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .week {
-    padding: 0 225px;
-  }
-
-  .week__title {
+    position: relative;
     padding-top: 61px;
     font-size: 53px;
     line-height: 1.08;
+    z-index: 1;
+  }
+
+  .week__link-image {
+    top: 0;
+    right: 50px;
+    width: 525px;
+    height: 636px;
   }
 
   .week__text {
-    line-height: 1;
-    width: 100px;
-    position: absolute;
-    top: 69px;
-    left: 32px;
+    left: 82px;
+    top: 74px;
+  }
+
+  .week__description {
+    margin-bottom: 60px;
+  }
+
+  .week__list {
+    margin-bottom: 109px;
   }
 }

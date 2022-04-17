@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  box-shadow: 0 1px 0 $octonary, inset 0 1px 0 $octonary;
 }
 
 .main-nav__list {
@@ -84,19 +85,23 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0;
   }
 
   .main-nav__logo {
     order: 2;
+    padding: 0;
   }
 
   .main-nav__site {
+    position: static;
     order: 1;
     margin-right: 200px;
   }
 
   .main-nav__extra {
-    display: flex;
+    position: absolute;
+    top: 109px;
+    left: 15px;
   }
 }

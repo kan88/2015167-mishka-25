@@ -21,6 +21,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-section {
+    padding: 0 225px 90px 225px;
+  }
+
   .about-section__title {
     font-size: 53px;
     line-height: 1.08;

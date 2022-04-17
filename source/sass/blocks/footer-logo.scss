@@ -1,3 +1,9 @@
 .footer-logo {
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-logo {
+    height: 143px;
+  }
+}

@@ -52,7 +52,7 @@
       width: 100%;
       background-image: url("../img/decor-icon/zigzag-fill.svg");
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       left: 0;
     }
   }
@@ -62,7 +62,7 @@
   .main-section__title {
     font-size: 53px;
     padding-top: 158px;
-    padding-bottom: 355px;
+    padding-bottom: 474px;
     line-height: 1.08;
     max-width: 700px;
   }
