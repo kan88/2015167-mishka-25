@@ -23,7 +23,25 @@
 
 .social__link {
   display: flex;
-  height: 143px;
+  height: 80px;
   align-items: center;
   cursor: pointer;
+}
+
+.social__logo {
+  fill: $duodenary;
+
+  &:hover {
+    fill: $undenary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    height: 143px;
+  }
 }

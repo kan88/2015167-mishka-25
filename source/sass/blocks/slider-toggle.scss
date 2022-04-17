@@ -10,6 +10,15 @@
   border: 1px solid $octonary;
   height: 52px;
   position: relative;
+  cursor: pointer;
+
+  &:hover .slider-toggle__button-icon {
+    opacity: 0.6;
+  }
+
+  &:active .slider-toggle__button-icon {
+    opacity: 0.3;
+  }
 }
 
 .slider-toggle__button-icon {
@@ -19,6 +28,7 @@
   left: 0;
   right: 0;
   margin: auto;
+  fill: $secondary;
 }
 
 .slider-toggle__button--next {

@@ -18,6 +18,14 @@
   color: $quinary;
   text-decoration: none;
   border-bottom: 1px solid $primary;
+
+  &:hover {
+    color: $undenary;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 }
 
 .contacts-item__description {

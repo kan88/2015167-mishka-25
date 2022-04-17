@@ -7,6 +7,11 @@
   list-style-type: none;
   background-color: $primary;
   flex-grow: 1;
+
+  &:hover {
+    position: relative;
+    bottom: 5px;
+  }
 }
 
 .main-list__item-toy {
@@ -22,10 +27,21 @@
   padding: 24px 80px 31px 30px;
   text-align: left;
   position: relative;
+
+
+  &:hover .main-list__logo {
+    opacity: 0.7;
+  }
+
+  &:active .main-list__logo {
+    opacity: 0.3;
+  }
 }
 
 .main-list__logo {
   position: absolute;
+  fill: $denary;
+  opacity: 0.5;
 }
 
 .main-list__logo-interior {

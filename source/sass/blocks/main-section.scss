@@ -2,7 +2,7 @@
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   background-color: $septenary;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   position: relative;
   bottom: 17px;
@@ -29,6 +29,17 @@
 @media (min-width: $tablet-width) {
   .main-section {
     position: static;
+
+    &::before {
+      content: "";
+      height: 24px;
+      width: 100%;
+      background-image: url("../img/decor-icon/zigzag-fill.svg");
+      position: absolute;
+      bottom: -134px;
+      left: 0;
+      z-index: 1;
+    }
   }
 
   .main-section__title {
@@ -44,17 +55,7 @@
     padding: 0;
     left: 0;
     right: 0;
-    top: 716px;
-
-    &::before {
-      content: "";
-      height: 24px;
-      width: 100%;
-      background-image: url("../img/decor-icon/zigzag-fill.svg");
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-    }
+    top: 717px;
   }
 }
 

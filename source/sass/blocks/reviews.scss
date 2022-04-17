@@ -56,10 +56,11 @@
   padding-bottom: 16px;
   border: 2px solid $quinary;
   margin: 0 auto;
-  width: 260px;
+  width: 256px;
 }
 
 .reviews__buttons {
+  justify-content: center;
   margin-bottom: 38px;
 }
 
@@ -103,7 +104,16 @@
     padding-top: 14px;
     padding-bottom: 14px;
     border: 2px solid $quinary;
-    width: 175px;
+    width: 171px;
+
+    &:hover {
+      background-color: $quinary;
+      color: $tertiary;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .reviews__buttons {

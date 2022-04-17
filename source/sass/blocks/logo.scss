@@ -4,6 +4,15 @@
 
 .logo__icon {
   height: 79px;
+  fill: $secondary;
+}
+
+.logo:hover .logo__icon {
+  opacity: 0.6;
+}
+
+.logo:active .logo__icon {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

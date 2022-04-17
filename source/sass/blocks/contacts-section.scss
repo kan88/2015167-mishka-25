@@ -31,7 +31,7 @@
   margin-bottom: 39px;
   margin-left: auto;
   margin-right: auto;
-  width: 260px;
+  width: 254px;
 }
 
 .contacts-section__map {
@@ -78,6 +78,15 @@
     margin-left: auto;
     margin-right: auto;
     width: 230px;
+
+    &:hover {
+      background-color: $quinary;
+      color: $tertiary;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .contacts-section__map {
@@ -124,7 +133,7 @@
   .contacts-section__link {
     margin-left: 0;
     margin-right: auto;
-    width: 230px;
+    width: 226px;
   }
 
   .contacts-section__map {

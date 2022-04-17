@@ -2,6 +2,18 @@
   align-items: center;
 }
 
+.footer-logo__icon {
+  fill: $secondary;
+
+  &:hover {
+    fill: $undenary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .footer-logo {
     height: 143px;

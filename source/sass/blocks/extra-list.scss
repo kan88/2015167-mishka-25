@@ -7,6 +7,14 @@
   font-size: 15px;
   line-height: 1.6;
   color: $secondary;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
