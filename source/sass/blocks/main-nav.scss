@@ -16,19 +16,36 @@
   position: absolute;
   top: 32px;
   right: 31px;
-  border: 0;
+  border: none;
   padding: 0;
   background-color: $tertiary;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
 }
 
-.main-nav__toggle--open {
+.main-nav__list--closed ~ .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
   background-image: url("../img/menu/toggle-close.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 14px;
 }
 
-.main-nav__toggle--close {
+.main-nav__list--opened ~ .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
   background-image: url("../img/menu/toggle-open.svg");
   background-repeat: no-repeat;
   width: 21px;
@@ -39,8 +56,18 @@
   display: none;
 }
 
-.main-nav__site--no-js {
+.main-nav__list--no-js {
   position: static;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav .main-nav__list--closed {
+    display: none;
+  }
+
+  .main-nav__list--opened + .main-nav {
+    position: absolute;
+  }
 }
 
 @media (min-width: $tablet-width) {

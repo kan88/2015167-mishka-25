@@ -5,14 +5,6 @@
   list-style-type: none;
   text-align: left;
   margin: 0;
-
-  &--close {
-    display: none;
-  }
-}
-
-.site-list--closed {
-  display: none;
 }
 
 .site-list__item {
@@ -38,11 +30,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
-    padding-left: 15px;
-
-    &--close {
-      display: flex;
-    }
+    padding-left: 28px;
   }
 
   .site-list__item {
@@ -58,6 +46,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 408px;
+    padding-left: 15px;
   }
 
   .site-list__item {
