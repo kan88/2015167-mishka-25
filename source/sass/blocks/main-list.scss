@@ -9,13 +9,17 @@
   flex-grow: 1;
 
   &:hover {
-    position: relative;
-    bottom: 5px;
+    box-shadow: 0 5px $primary;
+    transform: translateY(-5px);
   }
 }
 
 .main-list__item-toy {
   background-color: $quaternary;
+
+  &:hover {
+    box-shadow: 0 5px $quaternary;
+  }
 }
 
 .main-list__link {
@@ -27,7 +31,6 @@
   padding: 24px 80px 31px 30px;
   text-align: left;
   position: relative;
-
 
   &:hover .main-list__logo {
     opacity: 0.7;
