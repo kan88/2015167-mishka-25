@@ -65,8 +65,20 @@
     display: none;
   }
 
-  .main-nav__list--opened + .main-nav {
+  .main-nav__list--opened.main-nav__site {
     position: absolute;
+    top: 79px;
+    left: 0;
+    right: 0;
+    background-color: $tertiary;
+  }
+
+  .main-nav__list--opened.main-nav__user {
+    position: absolute;
+    top: 237px;
+    left: 0;
+    right: 0;
+    background-color: $tertiary;
   }
 }
 

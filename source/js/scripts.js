@@ -23,3 +23,5 @@ navToggle.addEventListener('click', function () {
     navMainUser.classList.remove('main-nav__list--opened');
   }
 });
+
+console.log ("hello")
