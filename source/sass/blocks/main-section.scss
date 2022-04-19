@@ -2,33 +2,25 @@
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   background-color: $septenary;
-  background-size: contain;
-  background-position: center;
+  background-size: 380px 380px;
+  background-position: center -20px;
 }
 
 .main-section__title {
   font-size: 27px;
-  padding-top: 90px;
+  padding-top: 73px;
   margin: 0 auto;
-  padding-bottom: 193px;
+  padding-bottom: 120px;
   line-height: 1.11;
   width: 260px;
 }
 
 .main-section__list {
-  margin: 0;
   padding: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 300px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .main-section {
-    position: static;
-  }
-
   .main-section__title {
     font-size: 43px;
     padding-top: 155px;

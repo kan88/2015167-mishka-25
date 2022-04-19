@@ -14,6 +14,7 @@
 
 .reviews__title {
   margin: 0;
+  margin-bottom: 14px;
   font-size: 25px;
   line-height: 1.2;
   text-align: left;
@@ -30,12 +31,14 @@
   font-weight: 400;
   color: $quinary;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 33px;
   width: auto;
 }
 
 .reviews__author-name {
+  display: block;
   font-style: normal;
+  margin-bottom: 5px;
 }
 
 .reviews__author-social {
@@ -52,8 +55,8 @@
   text-transform: uppercase;
   color: $quinary;
   text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   border: 2px solid $quinary;
   margin: 0 auto;
   width: 256px;
@@ -61,7 +64,7 @@
 
 .reviews__buttons {
   justify-content: center;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 @media (min-width: $tablet-width) {
