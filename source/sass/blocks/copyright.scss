@@ -1,5 +1,6 @@
 .copyright {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -8,11 +9,29 @@
   font-size: 19px;
   line-height: 0.95;
   margin: 0;
-  text-align: center;
+  margin-right: 29px;
 }
 
 .copyright__link {
   display: flex;
   height: 80px;
   align-items: center;
+}
+
+.copyright__logo {
+  fill: $primary;
+
+  &:hover {
+    fill: $undenary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 25px;
+  }
 }

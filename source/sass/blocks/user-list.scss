@@ -1,30 +1,83 @@
 .user-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   list-style-type: none;
-  align-items: center;
+  text-align: left;
+  cursor: pointer;
+}
 
-  &--close {
-    display: none;
-  }
+.user-list__item {
+  box-shadow: 0 1px 0 $octonary, inset 0 1px 0 $octonary;
 }
 
 .user-list__link {
   position: relative;
   display: block;
   text-decoration: none;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding: 28px 60px 27px 76px;
   color: $secondary;
-  min-width: 82px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+
+  &:hover .user-list__icon {
+    fill: $primary;
+    opacity: 1;
+  }
+
+  &:active .user-list__icon {
+    fill: $primary;
+    opacity: 0.3;
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+  fill: $secondary;
+  opacity: 0.2;
+}
+
+.user-list__icon-search {
+  top: 32px;
+  left: 32px;
+}
+
+.user-list__icon-cart {
+  top: 31px;
+  left: 30px;
 }
 
 @media (min-width: $tablet-width) {
+  .user-list__item {
+    box-shadow: 1px 1px 0 $octonary, inset 1px 1px 0 $octonary;
+  }
+
+  .user-list__link {
+    padding: 36px 31px 34px 33px;
+    color: $secondary;
+    height: 18px;
+    width: 18px;
+  }
+
+  .user-list__link--cart {
+    padding: 35px 263px 35px 31px;
+    height: 18px;
+    width: 21px;
+  }
+
   .user-list {
     flex-direction: row;
+  }
 
-    &--close {
-      display: flex;
-    }
+  .user-list__icon {
+    position: absolute;
   }
 
   .user-list__text-search {
@@ -32,27 +85,26 @@
   }
 
   .user-list__text {
-    padding-left: 80px;
-    padding-top: 32px;
+    display: block;
+    text-align: right;
     padding-bottom: 32px;
+    padding-left: 20px;
+    width: 211px;
   }
 
   .user-list__icon-search {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    top: 36px;
+    left: 33px;
   }
 
   .user-list__icon-cart {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-left: 31px;
+    top: 35px;
+    left: 31px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: 408px;
   }
 }

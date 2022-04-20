@@ -1,18 +1,31 @@
 .week {
   position: relative;
-  padding: 0 30px;
+  padding: 0 30px 73px 30px;
+
+  &::before {
+    content: "";
+    background-image: url("../img/decor-icon/zigzag-decor.svg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 31px;
+    height: 6px;
+  }
 }
 
 .week__title {
-  font-size: 31px;
+  font-size: 25px;
   line-height: 1.2;
   padding: 0;
+  padding-top: 31px;
   margin: 0;
   text-align: left;
+  margin-bottom: 4px;
 }
 
 .week__text {
   margin: 0;
+  margin-bottom: 17px;
   text-align: left;
   color: $primary;
   line-height: 1.18;
@@ -21,10 +34,24 @@
 
 .week__description {
   margin: 0;
+  margin-bottom: 25px;
   text-align: left;
   font-size: 15px;
   line-height: 1.6;
   font-weight: 400;
+}
+
+.week__link-image {
+  margin: 0 auto;
+  display: block;
+  width: 260px;
+  height: 315px;
+  margin-bottom: 28px;
+}
+
+.week__price {
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .week__link {
@@ -34,102 +61,149 @@
   text-transform: uppercase;
   color: $quinary;
   text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   border: 2px solid $quinary;
-  margin-bottom: 45px;
   margin-left: auto;
   margin-right: auto;
-  width: 260px;
+  width: 256px;
+
+  &:hover {
+    background-color: $quinary;
+    color: $tertiary;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
+.week__list {
+  margin: 0;
+  margin-bottom: 28px;
+}
 
 @media (min-width: $tablet-width) {
   .week {
     position: relative;
-    padding: 0 52px;
+    padding: 0 50px 124px 50px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/decor-icon/zigzag-decor-tablet.svg");
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 54px;
+      height: 17px;
+    }
   }
 
   .week__title {
     font-size: 43px;
     line-height: 1.16;
     min-width: 450px;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
+    padding-top: 51px;
   }
 
   .week__description {
+    font-size: 17px;
+    line-height: 1.76;
     width: 292px;
-    margin-bottom: 48px;
+    margin-bottom: 42px;
   }
 
   .week__list {
-    margin-bottom: 70px;
+    margin-bottom: 59px;
   }
 
   .week__text {
     line-height: 1;
     width: 100px;
     position: absolute;
-    top: 7px;
-    right: 65px;
+    top: 57px;
+    right: 45px;
+  }
+
+  .week__link-image {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    width: 334px;
+    height: 404px;
   }
 
   .week__image {
-    position: absolute;
-    top: 100px;
-    right: 52px;
+    width: 100%;
+    height: auto;
   }
 
   .week__price {
-    padding-left: 109px;
+    font-size: 20px;
     text-align: left;
+    padding-left: 70px;
+    margin-bottom: 33px;
   }
 
   .week__link {
+    font-size: 17px;
+    line-height: 1.17;
     display: block;
-    width: 292px;
+    width: 288px;
     margin-left: 0;
     margin-right: auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .week {
-    padding: 0 225px;
+    padding: 0 0 96px 225px;
+    margin-bottom: 68px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/decor-icon/zigzag-line-desktop.svg");
+      left: 50px;
+      right: 50px;
+      bottom: 0;
+      height: 23px;
+    }
   }
 
   .week__title {
-    padding-top: 61px;
-  }
-
-  .week__text {
-    line-height: 1;
-    width: 100px;
-    position: absolute;
-    top: 69px;
-    left: 32px;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .week {
-    padding: 0 225px;
-  }
-
-  .week__title {
+    position: relative;
     padding-top: 61px;
     font-size: 53px;
     line-height: 1.08;
+    z-index: 1;
+    margin-bottom: 36px;
+  }
+
+  .week__link-image {
+    top: 0;
+    right: 50px;
+    width: 525px;
+    height: 636px;
   }
 
   .week__text {
-    line-height: 1;
-    width: 100px;
-    position: absolute;
-    top: 69px;
-    left: 32px;
+    left: 99px;
+    top: 70px;
+  }
+
+  .week__description {
+    margin-bottom: 52px;
+  }
+
+  .week__list {
+    margin-bottom: 115px;
+  }
+
+  .week__price {
+    padding-left: 72px;
+    margin-bottom: 32px;
   }
 }

@@ -1,17 +1,25 @@
 .main-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 31px;
 }
 
 .main-list__item {
   list-style-type: none;
   background-color: $primary;
   flex-grow: 1;
+
+  &:hover {
+    box-shadow: 0 5px $primary;
+    transform: translateY(-5px);
+  }
 }
 
 .main-list__item-toy {
   background-color: $quaternary;
+
+  &:hover {
+    box-shadow: 0 5px $quaternary;
+  }
 }
 
 .main-list__link {
@@ -20,17 +28,55 @@
   color: $tertiary;
   font-size: 19px;
   line-height: 1.26;
-  padding-top: 24px;
-  padding-bottom: 31px;
-  padding-left: 30px;
+  padding: 24px 80px 31px 30px;
   text-align: left;
   position: relative;
+
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.main-list__link--toy::before {
+  background-image: url("../img/decor-icon/toy.svg");
+  top: 31px;
+  right: 35px;
+  width: 60px;
+  height: 61px;
+}
+
+.main-list__link--interior::before {
+  background-image: url("../img/decor-icon/interior.svg");
+  top: 30px;
+  right: 36px;
+  width: 41px;
+  height: 62px;
 }
 
 .main-list__logo {
   position: absolute;
-  right: 30px;
-  top: 20px;
+  fill: $denary;
+  opacity: 0.5;
+}
+
+.main-list__logo-interior {
+  right: 36px;
+  top: 23px;
+}
+
+.main-list__logo-toy {
+  right: 27px;
+  top: 21px;
 }
 
 .main-list__text {
@@ -41,6 +87,22 @@
 @media (min-width: $tablet-width) {
   .main-list {
     flex-direction: row;
-    padding: 0 52px;
+    padding: 0 50px;
+  }
+
+  .main-list__link {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 26px 80px 34px 37px;
+  }
+
+  .main-list__logo-interior {
+    right: 36px;
+    top: 30px;
+  }
+
+  .main-list__logo-toy {
+    right: 33px;
+    top: 31px;
   }
 }

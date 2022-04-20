@@ -1,8 +1,12 @@
+.slider {
+  padding: 13px 30px 89px 30px;
+}
+
 .slider__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 .slider__item-none {
@@ -15,12 +19,23 @@
     background-image: url("../img/review-background.jpg");
     background-repeat: no-repeat;
     background-color: $tertiary;
-    padding: 0 50px;
+    background-size: 350px 457px;
+    padding: 0 50px 178px 50px;
+  }
+
+  .slider__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .slider__list br {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
-    padding-left: 174px;
+    padding: 0 50px 260px 175px;
   }
 }

@@ -1,12 +1,48 @@
 .social__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 1px;
+    width: 260px;
+    background-color: $nonary;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.social__item.social__item:not(:last-child) {
+  margin-right: 29px;
 }
 
 .social__link {
   display: flex;
   height: 80px;
+  width: 29px;
   align-items: center;
+  cursor: pointer;
+}
+
+.social__logo {
+  fill: $duodenary;
+
+  &:hover {
+    fill: $undenary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    height: 140px;
+  }
 }
