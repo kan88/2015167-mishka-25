@@ -32,13 +32,35 @@
   text-align: left;
   position: relative;
 
-  &:hover .main-list__logo {
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  &:hover::before {
     opacity: 0.7;
   }
 
-  &:active .main-list__logo {
+  &:active::before {
     opacity: 0.3;
   }
+}
+
+.main-list__link--toy::before {
+  background-image: url("../img/decor-icon/toy.svg");
+  top: 31px;
+  right: 35px;
+  width: 60px;
+  height: 61px;
+}
+
+.main-list__link--interior::before {
+  background-image: url("../img/decor-icon/interior.svg");
+  top: 30px;
+  right: 36px;
+  width: 41px;
+  height: 62px;
 }
 
 .main-list__logo {
