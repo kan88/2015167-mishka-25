@@ -21,10 +21,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-section {
+    background-size: 765px 740px;
+    background-position: center 0;
+  }
+
   .main-section__title {
     font-size: 43px;
     padding-top: 155px;
-    padding-bottom: 491px;
+    padding-bottom: 371px;
     line-height: 1.16;
     width: 700px;
   }
@@ -32,9 +37,7 @@
   .main-section__list {
     margin: 0;
     padding: 0;
-    left: 0;
-    right: 0;
-    top: 717px;
+    position: relative;
 
     &::before {
       content: "";
@@ -42,9 +45,8 @@
       width: 100%;
       background-image: url("../img/decor-icon/zigzag-fill.svg");
       position: absolute;
-      bottom: 0;
+      bottom: -11px;
       left: 0;
-      z-index: 1;
     }
   }
 }
@@ -53,8 +55,17 @@
   .main-section__title {
     font-size: 53px;
     padding-top: 158px;
-    padding-bottom: 474px;
+    padding-bottom: 354px;
     line-height: 1.08;
     max-width: 700px;
+  }
+
+  .main-section__list::before {
+    content: "";
+    height: 34px;
+    background-image: url("../img/decor-icon/zigzag-decor-desktop.svg");
+    position: absolute;
+    bottom: -16px;
+    left: 0;
   }
 }

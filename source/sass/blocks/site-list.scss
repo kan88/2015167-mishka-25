@@ -39,13 +39,12 @@
   }
 
   .site-list__link {
-    padding: 22px;
+    padding: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 408px;
     padding-left: 15px;
   }
 
@@ -58,6 +57,7 @@
   }
 
   .site-list__link {
+    font-size: 17px;
     padding: 32px 35px;
   }
 }

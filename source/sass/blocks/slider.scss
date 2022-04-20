@@ -28,6 +28,10 @@
     padding: 0;
     margin: 0;
   }
+
+  .slider__list br {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {

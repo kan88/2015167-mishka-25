@@ -56,12 +56,13 @@
     line-height: 1.16;
     padding-top: 22px;
     padding-left: 50px;
+    margin-bottom: 48px;
   }
 
   .contacts-section__list {
     padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 333px 333px;
     margin-bottom: 49px;
   }
 
@@ -107,21 +108,25 @@
       background-image: url("../img/decor-icon/flag.svg");
       width: 47px;
       height: 81px;
-      left: 100px;
-      top: 60px;
+      left: 112px;
+      top: 58px;
     }
   }
 
   .contacts-section__title {
-    font-size: 43px;
+    font-size: 53px;
     line-height: 1.16;
     padding: 0;
-    padding-top: 67px;
+    padding-top: 71px;
+    margin-bottom: 35px;
   }
 
   .contacts-section__list {
+    display: flex;
     flex-direction: column;
     padding: 0;
+    margin: 0;
+    margin-bottom: 83px;
   }
 
   .contacts-section__image {
@@ -131,8 +136,7 @@
   }
 
   .contacts-section__link {
-    margin-left: 0;
-    margin-right: auto;
+    margin: 0 auto 0 0;
     width: 226px;
   }
 

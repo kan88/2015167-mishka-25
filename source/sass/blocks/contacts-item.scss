@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 76px 183px;
   text-align: left;
-  margin-bottom: 30px;
 }
 
 .contacts-item__term {
@@ -42,6 +41,7 @@
     display: grid;
     grid-template-columns: 78px 230px;
     text-align: left;
+    margin: 0;
   }
 
   .contacts-item__term {
@@ -57,6 +57,11 @@
   .contacts-item__description {
     font-size: 17px;
     line-height: 1.76;
-    width: 208px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-item__term {
+    margin-bottom: 28px;
   }
 }

@@ -94,7 +94,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 31px;
+      bottom: 54px;
       height: 17px;
     }
   }
@@ -103,32 +103,33 @@
     font-size: 43px;
     line-height: 1.16;
     min-width: 450px;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
+    padding-top: 51px;
   }
 
   .week__description {
     font-size: 17px;
     line-height: 1.76;
     width: 292px;
-    margin-bottom: 48px;
+    margin-bottom: 42px;
   }
 
   .week__list {
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 
   .week__text {
     line-height: 1;
     width: 100px;
     position: absolute;
-    top: 7px;
-    right: 65px;
+    top: 57px;
+    right: 45px;
   }
 
   .week__link-image {
     position: absolute;
-    top: 100px;
-    right: 52px;
+    top: 150px;
+    right: 50px;
     width: 334px;
     height: 404px;
   }
@@ -139,6 +140,7 @@
   }
 
   .week__price {
+    font-size: 20px;
     text-align: left;
     padding-left: 70px;
     margin-bottom: 33px;
@@ -158,15 +160,18 @@
 
 @media (min-width: $desktop-width) {
   .week {
-    padding: 0 225px 96px 225px;
+    padding: 0 0 96px 225px;
     margin-bottom: 68px;
 
     &::before {
+      content: "";
+      background-image: url("../img/decor-icon/zigzag-line-desktop.svg");
       left: 50px;
       right: 50px;
+      bottom: 0;
+      height: 23px;
     }
   }
-
 
   .week__title {
     position: relative;
@@ -174,6 +179,7 @@
     font-size: 53px;
     line-height: 1.08;
     z-index: 1;
+    margin-bottom: 36px;
   }
 
   .week__link-image {
@@ -184,15 +190,20 @@
   }
 
   .week__text {
-    left: 82px;
-    top: 74px;
+    left: 99px;
+    top: 70px;
   }
 
   .week__description {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
   }
 
   .week__list {
-    margin-bottom: 109px;
+    margin-bottom: 115px;
+  }
+
+  .week__price {
+    padding-left: 72px;
+    margin-bottom: 32px;
   }
 }

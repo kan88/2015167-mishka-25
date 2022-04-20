@@ -63,3 +63,18 @@
 .main-header__wrapper--nojs .main-nav__user {
   display: flex;
 }
+
+
+@media (min-width: $tablet-width) {
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__wrapper--closed .main-nav__site {
+    display: flex;
+  }
+
+  .main-header__wrapper--closed .main-nav__user {
+    display: flex;
+  }
+}
