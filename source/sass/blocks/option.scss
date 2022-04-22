@@ -17,14 +17,18 @@
   text-align: left;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .option__textarea {
   display: block;
-  min-width: 260px;
-  min-height: 142px;
+  min-width: 230px;
   text-align: left;
+  font-size: 17px;
+  padding-top: 17px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
