@@ -32,14 +32,19 @@
   text-align: left;
 }
 
+.name__label {
+  display: flex;
+  flex-direction: column;
+}
+
 .name__input {
-  display: block;
+  display: flex;
+  flex-grow: 1;
   border: none;
   border-bottom: 2px solid $secondary;
   text-align: left;
   padding-top: 11px;
   padding-bottom: 12px;
-  width: 260px;
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 1.05;
@@ -50,27 +55,43 @@
 @media (min-width: $tablet-width) {
   .name {
     display: flex;
-    padding: 65px 50px 69px 50px;
+    padding: 62px 50px 14px 50px;
+    margin: 0;
+  }
+
+  .name__headline {
+    padding-top: 5px;
+    margin-right: 124px;
   }
 
   .name__title {
     display: block;
     font-size: 19px;
     line-height: 0.96;
-    padding-top: 15px;
+    padding-top: 4px;
+    margin-right: 25px;
+  }
+
+  .name__input {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 20px 12px 20px;
+    font-size: 19px;
+    letter-spacing: 0;
   }
 
   .name__list {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .name__item {
-    padding-left: 80px;
-    width: 400px;
+    margin-bottom: 11px;
+    padding: 0;
   }
 
   .name__label {
-    display: flex;
+    flex-direction: row;
   }
 }

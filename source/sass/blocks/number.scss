@@ -20,13 +20,13 @@
 }
 
 .number__input {
-  display: block;
+  display: flex;
+  flex-grow: 1;
   border: none;
   border-bottom: 2px solid $secondary;
   text-align: left;
   padding-top: 16px;
   padding-bottom: 15px;
-  width: 260px;
   font-size: 17px;
 }
 
@@ -36,15 +36,28 @@
   right: 39px;
 }
 
+.number__label {
+  display: flex;
+  flex-grow: 1;
+}
+
 @media (min-width: $tablet-width) {
   .number {
     display: flex;
-    padding: 0 50px;
+    padding: 47px 50px 0 50px;
     background-color: $septenary;
     margin: 0;
   }
 
   .number__input {
     background-color: $septenary;
+    font-size: 19px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .number__title {
+    padding-top: 20px;
+    margin-right: 135px;
   }
 }

@@ -1,8 +1,15 @@
 .main-inner__title {
-  background-color: $senary;
   font-size: 27px;
   line-height: 1.2;
   padding-top: 73px;
-  padding-bottom: 72px;
   margin: 0;
+  margin-bottom: 72px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-inner__title {
+    font-size: 43px;
+    padding-top: 99px;
+    margin-bottom: 75px;
+  }
 }
