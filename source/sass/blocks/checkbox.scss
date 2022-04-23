@@ -29,7 +29,7 @@
   width: 200px;
   margin-bottom: 43px;
   padding: 0;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .checkbox__item {
@@ -38,6 +38,27 @@
 
 .checkbox__label {
   padding-left: 91px;
+  position: relative;
+}
+
+.checkbox__mark {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border: 2px solid $quinary;
+  top: -12px;
+  left: 30px;
+}
+
+.checkbox__input[type="checkbox"]:checked + .checkbox__mark::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background-image: url("../img/tick.svg");
+  width: 23px;
+  height: 16px;
 }
 
 @media (min-width: $tablet-width) {

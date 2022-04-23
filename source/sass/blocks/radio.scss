@@ -12,11 +12,12 @@
   text-align: left;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding-left: 29px;
 }
 
 .radio__title {
+  display: block;
   font-size: 17px;
   line-height: 1.06;
   font-weight: 700;
@@ -35,11 +36,41 @@
 .radio__label {
   display: block;
   cursor: pointer;
-  padding-left: 88px;
+  padding-left: 90px;
+  position: relative;
+}
+
+.radio__mark {
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid $quinary;
 }
 
 .radio__item {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
+}
+
+.radio__title--toy {
+  padding-top: 7px;
+}
+
+.radio__input[type="radio"]:checked + .radio__mark::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-color: $tertiarydenaty;
 }
 
 @media (min-width: $tablet-width) {
