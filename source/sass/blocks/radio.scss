@@ -119,3 +119,22 @@
     height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .radio {
+    display: flex;
+    padding: 77px 50px 7px 111px;
+    max-width: 989px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .radio__headline {
+    padding-top: 3px;
+    margin-right: 51px;
+  }
+
+  .radio__mark {
+    left: 26px;
+  }
+}

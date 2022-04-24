@@ -1,15 +1,22 @@
 .main-inner__title {
   font-size: 27px;
   line-height: 1.2;
+  background-color: $septenary;
   padding-top: 73px;
   margin: 0;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 @media (min-width: $tablet-width) {
   .main-inner__title {
     font-size: 43px;
     padding-top: 99px;
-    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-inner__title {
+    font-size: 53px;
+    padding-bottom: 92px;
   }
 }

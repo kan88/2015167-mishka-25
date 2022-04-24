@@ -16,8 +16,38 @@
     font-size: 17px;
     line-height: 1.85;
     width: 668px;
-    padding-top: 65px;
+    padding-top: 68px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-text {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .form__wrapper--checkbox {
+    background-color: $septenary;
+  }
+
+  .form__wrapper--number-mail {
+    background-color: $septenary;
+  }
+
+  .form__wrapper--text-button {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .form__text {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.85;
+    width: 702px;
+    padding: 115px 0 0 225px;
   }
 }

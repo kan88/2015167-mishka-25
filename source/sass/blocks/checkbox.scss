@@ -64,7 +64,6 @@
   .checkbox {
     display: flex;
     padding: 69px 50px 13px 50px;
-    background-color: $septenary;
   }
 
   .checkbox__headline {
@@ -111,9 +110,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .checkbox {
+    padding: 69px 50px 9px 111px;
+    max-width: 989px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
   .checkbox__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 262px 264px 263px;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .checkbox__item {
+    padding-left: 26px;
+  }
+
+  .checkbox__mark {
+    top: -20px;
+    left: 44px;
   }
 }
