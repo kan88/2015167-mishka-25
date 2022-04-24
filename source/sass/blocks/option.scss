@@ -25,20 +25,31 @@
   min-width: 230px;
   text-align: left;
   font-size: 17px;
-  padding-top: 17px;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 5px;
+  padding: 17px 14px 5px 14px;
 }
 
 @media (min-width: $tablet-width) {
   .option {
-    display: flex;
-    padding: 50px 50px 53px 50px;
+    flex-direction: row;
+    padding: 50px 50px 55px 50px;
     margin: 0;
   }
 
+  .option__title {
+    padding-top: 19px;
+    margin-right: 127px;
+  }
+
+  .option__label {
+    display: flex;
+    flex-grow: 1;
+  }
+
   .option__textarea {
+    flex-grow: 1;
     background-color: $septenary;
+    font-size: 19px;
+    padding: 14px 14px 0 15px;
+    height: 123px;
   }
 }

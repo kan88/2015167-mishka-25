@@ -18,8 +18,13 @@
   margin-bottom: 5px;
 }
 
+.mail__label {
+  display: flex;
+  flex-grow: 1;
+}
+
 .mail__input {
-  display: block;
+  flex-grow: 1;
   border: none;
   border-bottom: 2px solid $secondary;
   text-align: left;
@@ -40,11 +45,27 @@
 @media (min-width: $tablet-width) {
   .mail {
     display: flex;
-    padding: 0 50px;
+    flex-grow: 1;
+    padding: 0 50px 50px 50px;
     background-color: $septenary;
   }
 
   .mail__input {
+    font-size: 19px;
     background-color: $septenary;
+    padding-left: 16px;
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  .mail__title {
+    margin: 0;
+    padding-top: 19px;
+    margin-right: 110px;
+  }
+
+  .mail__icon {
+    bottom: 65px;
+    right: 73px;
   }
 }

@@ -19,8 +19,12 @@
   margin-bottom: 5px;
 }
 
-.number__input {
+.number__label {
   display: flex;
+  flex-grow: 1;
+}
+
+.number__input {
   flex-grow: 1;
   border: none;
   border-bottom: 2px solid $secondary;
@@ -36,15 +40,10 @@
   right: 39px;
 }
 
-.number__label {
-  display: flex;
-  flex-grow: 1;
-}
-
 @media (min-width: $tablet-width) {
   .number {
     display: flex;
-    padding: 47px 50px 0 50px;
+    padding: 47px 50px 24px 50px;
     background-color: $septenary;
     margin: 0;
   }
@@ -59,5 +58,10 @@
   .number__title {
     padding-top: 20px;
     margin-right: 135px;
+  }
+
+  .number__icon {
+    bottom: 40px;
+    right: 75px;
   }
 }
