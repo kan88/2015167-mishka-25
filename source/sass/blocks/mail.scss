@@ -21,6 +21,30 @@
 .mail__label {
   display: flex;
   flex-grow: 1;
+  cursor: pointer;
+
+  &:hover .mail__input {
+    border-bottom: 2px solid $primary;
+  }
+
+  &:active .mail__input {
+    border-bottom: 2px solid $primary;
+  }
+
+  &:hover + .mail__icon {
+    fill: $primary;
+  }
+
+  &:active + .mail__icon {
+    fill: $primary;
+  }
+}
+
+.mail__icon {
+  position: absolute;
+  bottom: 52px;
+  right: 35px;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .mail__input {
@@ -34,12 +58,7 @@
   margin-bottom: 35px;
   font-size: 18px;
   letter-spacing: -1px;
-}
-
-.mail__icon {
-  position: absolute;
-  bottom: 52px;
-  right: 35px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

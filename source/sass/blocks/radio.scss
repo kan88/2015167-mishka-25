@@ -38,6 +38,14 @@
   cursor: pointer;
   padding-left: 90px;
   position: relative;
+
+  &:hover .radio__mark {
+    border: 2px solid $tertiarydenaty;
+  }
+
+  &:active .radio__mark {
+    border: 2px solid $nonary;
+  }
 }
 
 .radio__mark {
@@ -60,6 +68,34 @@
 }
 
 .radio__input[type="radio"]:checked + .radio__mark::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-color: $tertiarydenaty;
+}
+
+.radio__input[type="radio"]:hover + .radio__mark::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-color: $tertiarydenaty;
+}
+
+.radio__input[type="radio"]:active + .radio__mark::before {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -115,6 +151,16 @@
   }
 
   .radio__input[type="radio"]:checked + .radio__mark::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radio__input[type="radio"]:hover + .radio__mark::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radio__input[type="radio"]:active + .radio__mark::before {
     width: 20px;
     height: 20px;
   }

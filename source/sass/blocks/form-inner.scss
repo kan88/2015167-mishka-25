@@ -27,6 +27,16 @@
   margin-bottom: 55px;
   border: 2px solid $quinary;
   width: 260px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $quinary;
+    color: $tertiary;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -43,6 +53,14 @@
     right: 50px;
     font-size: 17px;
   }
+
+  .form-inner__wrapper--checkbox {
+    background-color: $septenary;
+  }
+
+  .form-inner__wrapper--number-mail {
+    background-color: $septenary;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -53,5 +71,12 @@
 
   .form-inner__text {
     right: 225px;
+  }
+
+  .form-inner__wrapper--text-button {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
   }
 }

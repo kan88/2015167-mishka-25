@@ -35,6 +35,15 @@
 .name__label {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+
+  &:hover .name__input {
+    border-bottom: 2px solid $primary;
+  }
+
+  &:active .name__input {
+    border-bottom: 2px solid $primary;
+  }
 }
 
 .name__input {
@@ -50,6 +59,7 @@
   line-height: 1.05;
   font-weight: 400;
   letter-spacing: -0.6px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

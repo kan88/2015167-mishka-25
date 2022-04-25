@@ -38,6 +38,15 @@
 .checkbox__label {
   padding-left: 91px;
   position: relative;
+  cursor: pointer;
+
+  &:hover .checkbox__mark {
+    border: 2px solid $tertiarydenaty;
+  }
+
+  &:active .checkbox__mark {
+    border: 2px solid $nonary;
+  }
 }
 
 .checkbox__mark {
