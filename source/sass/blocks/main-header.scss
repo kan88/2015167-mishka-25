@@ -13,16 +13,14 @@
 }
 
 .main-header .main-header__wrapper--opened {
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-bottom: -316px;
   background-color: $tertiary;
 }
 
 .main-header__toggle {
   position: absolute;
-  top: 29px;
-  right: 27px;
+  top: 32px;
+  right: 30px;
   border: none;
   padding: 0;
   background-color: $tertiary;

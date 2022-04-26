@@ -50,6 +50,12 @@
   padding-bottom: 15px;
   font-size: 17px;
   cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    border-radius: 5px;
+  }
 }
 
 .number__icon {

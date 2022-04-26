@@ -60,6 +60,12 @@
   font-weight: 400;
   letter-spacing: -0.6px;
   cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    border-radius: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {

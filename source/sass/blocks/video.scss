@@ -23,6 +23,18 @@
   line-height: 1.41;
   width: 156px;
   text-align: left;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/camera.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 32px;
+    width: 32px;
+    height: 22px;
+  }
 }
 
 .video__image {
@@ -124,13 +136,8 @@
 
     &::before {
       content: "";
-      background-image: url("../img/camera.svg");
-      background-repeat: no-repeat;
-      position: absolute;
       top: 0;
       left: 42px;
-      width: 32px;
-      height: 22px;
     }
   }
 
@@ -184,13 +191,8 @@
 
     &::before {
       content: "";
-      background-image: url("../img/camera.svg");
-      background-repeat: no-repeat;
-      position: absolute;
       top: 47px;
       left: 80px;
-      width: 32px;
-      height: 22px;
     }
   }
 

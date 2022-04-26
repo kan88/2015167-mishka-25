@@ -36,6 +36,12 @@
   &:active {
     border: 2px solid $primary;
   }
+
+  &:focus {
+    outline: 2px solid $primary;
+    border: 2px solid $primary;
+    border-radius: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {

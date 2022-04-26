@@ -72,7 +72,7 @@
 .card__cart-link {
   position: absolute;
   right: 26px;
-  bottom: 30px;
+  bottom: 28px;
 }
 
 .card__cart-icon {
@@ -90,7 +90,9 @@
 @media (min-width: $tablet-width) {
   .card__item {
     display: flex;
+    margin: 0 auto;
     margin-bottom: 52px;
+    max-width: 668px;
   }
 
   .card__link {
