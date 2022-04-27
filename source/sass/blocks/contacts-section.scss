@@ -142,9 +142,10 @@
 
   .contacts-section__map {
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 50px;
     width: 527px;
     height: 457px;
+    margin: 0;
   }
 }
