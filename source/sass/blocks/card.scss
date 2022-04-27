@@ -4,9 +4,32 @@
   padding: 0;
 }
 
+.card__item {
+  margin-bottom: 27px;
+
+  &:hover .card__wrapper {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .card__wrapper {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card__link {
+  margin: 0 auto;
+  display: block;
+  height: 195px;
+  width: 260px;
+}
+
+
 .card__wrapper {
-  padding: 28px;
+  border: 1px solid $octonary;
+  padding: 28px 27px 26px 27px;
   position: relative;
+  max-width: 204px;
+  margin: 0 auto;
 }
 
 .card__title-link {
@@ -20,6 +43,14 @@
   line-height: 1.41;
   margin-bottom: 9px;
   text-align: left;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .card__info {
@@ -40,18 +71,44 @@
 
 .card__cart-link {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 26px;
+  bottom: 28px;
+}
+
+.card__cart-icon {
+  fill: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    fill: rgba(99, 209, 187, 1);
+  }
+
+  &:active {
+    fill: rgba(99, 209, 187, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .card__item {
     display: flex;
+    margin: 0 auto;
+    margin-bottom: 52px;
+    max-width: 668px;
+  }
+
+  .card__link {
+    width: 334px;
+    height: 334px;
+  }
+
+  .card__images {
+    width: 334px;
+    height: 334px;
+    max-width: none;
   }
 
   .card__wrapper {
-    padding-left: 34px;
-    min-width: 335px;
+    padding: 27px 39px 23px 33px;
+    min-width: 263px;
   }
 
   .card__title {
@@ -64,12 +121,21 @@
     font-size: 15px;
     line-height: 2;
     margin-bottom: 197px;
+    padding: 0;
+  }
+
+  .card__info--cart {
+    margin-bottom: 171px;
   }
 
   .card__cart-link {
-    position: absolute;
-    right: 32px;
-    bottom: 32px;
+    right: 34px;
+    bottom: 28px;
+  }
+
+  .card__price {
+    font-size: 17px;
+    line-height: 1.5;
   }
 }
 
@@ -78,15 +144,27 @@
     display: flex;
   }
 
+  .card__link {
+    width: 316px;
+    height: 462px;
+  }
+
+  .card__images {
+    width: 316px;
+    height: 462px;
+  }
+
   .card__item {
     flex-direction: column;
   }
 
+  .card__item:not(:nth-child(3)) {
+    margin-right: 51px;
+  }
+
   .card__wrapper {
-    padding: 27px;
-    position: relative;
-    padding-left: 34px;
-    min-width: 316px;
+    padding: 27px 26px 23px 28px;
+    min-width: 260px;
   }
 
   .card__title {
@@ -95,5 +173,9 @@
 
   .card__info {
     margin-bottom: 60px;
+  }
+
+  .card__info--cart {
+    margin-bottom: 36px;
   }
 }

@@ -19,32 +19,90 @@
   margin-bottom: 5px;
 }
 
+.number__label {
+  display: flex;
+  flex-grow: 1;
+  cursor: pointer;
+
+  &:hover .number__input {
+    border-bottom: 2px solid $primary;
+  }
+
+  &:active .number__input {
+    border-bottom: 2px solid $primary;
+  }
+
+  &:hover + .number__icon {
+    fill: $primary;
+  }
+
+  &:active + .number__icon {
+    fill: $primary;
+  }
+}
+
 .number__input {
-  display: block;
+  flex-grow: 1;
   border: none;
   border-bottom: 2px solid $secondary;
   text-align: left;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  width: 260px;
-  margin-bottom: 22px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  font-size: 17px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    border-radius: 5px;
+  }
 }
 
 .number__icon {
   position: absolute;
-  bottom: 35px;
-  left: 230px;
+  bottom: 17px;
+  right: 39px;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: $tablet-width) {
   .number {
     display: flex;
-    padding: 0 50px;
-    background-color: $septenary;
+    padding: 47px 50px 24px 50px;
     margin: 0;
   }
 
   .number__input {
     background-color: $septenary;
+    font-size: 19px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .number__title {
+    padding-top: 20px;
+    margin-right: 135px;
+  }
+
+  .number__icon {
+    bottom: 40px;
+    right: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .number {
+    padding: 47px 225px 24px 111px;
+    max-width: 814px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .number__title {
+    margin-right: 83px;
+  }
+
+  .number__icon {
+    right: 232px;
   }
 }

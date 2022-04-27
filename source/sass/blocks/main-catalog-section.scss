@@ -18,3 +18,10 @@
     line-height: 1.16;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-catalog-section__title {
+    padding-bottom: 92px;
+    font-size: 53px;
+  }
+}

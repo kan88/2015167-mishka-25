@@ -49,15 +49,15 @@
 
 .main-list__link--toy::before {
   background-image: url("../img/decor-icon/toy.svg");
-  top: 31px;
-  right: 35px;
+  top: 22px;
+  right: 30px;
   width: 60px;
   height: 61px;
 }
 
 .main-list__link--interior::before {
   background-image: url("../img/decor-icon/interior.svg");
-  top: 30px;
+  top: 25px;
   right: 36px;
   width: 41px;
   height: 62px;
@@ -67,16 +67,6 @@
   position: absolute;
   fill: $denary;
   opacity: 0.5;
-}
-
-.main-list__logo-interior {
-  right: 36px;
-  top: 23px;
-}
-
-.main-list__logo-toy {
-  right: 27px;
-  top: 21px;
 }
 
 .main-list__text {
@@ -96,13 +86,19 @@
     padding: 26px 80px 34px 37px;
   }
 
-  .main-list__logo-interior {
-    right: 36px;
-    top: 30px;
+  .main-list__link--toy::before {
+    background-image: url("../img/decor-icon/toy.svg");
+    top: 31px;
+    right: 35px;
+    width: 60px;
+    height: 61px;
   }
 
-  .main-list__logo-toy {
-    right: 33px;
-    top: 31px;
+  .main-list__link--interior::before {
+    background-image: url("../img/decor-icon/interior.svg");
+    top: 30px;
+    right: 36px;
+    width: 41px;
+    height: 62px;
   }
 }

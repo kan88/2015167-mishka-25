@@ -20,17 +20,28 @@
   line-height: 0.94;
   background-color: $tertiary;
   text-transform: uppercase;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-weight: 700;
   margin: 0 auto;
   margin-bottom: 55px;
   border: 2px solid $quinary;
   width: 260px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $quinary;
+    color: $tertiary;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form-inner__button {
+    display: block;
     width: 230px;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -38,7 +49,34 @@
 
   .form-inner__text {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 35px;
+    right: 50px;
+    font-size: 17px;
+  }
+
+  .form-inner__wrapper--checkbox {
+    background-color: $septenary;
+  }
+
+  .form-inner__wrapper--number-mail {
+    background-color: $septenary;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-inner__button {
+    display: block;
+    margin-left: 225px;
+  }
+
+  .form-inner__text {
+    right: 225px;
+  }
+
+  .form-inner__wrapper--text-button {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
   }
 }

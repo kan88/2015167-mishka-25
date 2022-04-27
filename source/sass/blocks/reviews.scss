@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.reviews__wrapper {
+  max-width: 925px;
+  margin: 0 auto;
+}
+
 .reviews__wrapper::before {
   content: "";
   background-image: url("../img/decor-icon/zigzag-decor.svg");
@@ -152,19 +157,24 @@
     content: "";
     background-image: url("../img/decor-icon/zigzag-line-desktop.svg");
     position: absolute;
-    left: 50px;
-    right: 50px;
+    left: 0;
+    right: 100px;
     bottom: 75px;
     height: 23px;
   }
 
   .reviews {
     padding: 0 50px 0 50px;
+    position: relative;
+  }
+
+  .reviews__link {
+    right: 100px;
   }
 
   .reviews__buttons {
     position: absolute;
-    right: 50px;
+    right: 100px;
     bottom: 263px;
     margin: 0;
   }

@@ -2,7 +2,7 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 9px;
   padding-left: 29px;
   padding-right: 29px;
 }
@@ -32,41 +32,96 @@
   text-align: left;
 }
 
+.name__label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:hover .name__input {
+    border-bottom: 2px solid $primary;
+  }
+
+  &:active .name__input {
+    border-bottom: 2px solid $primary;
+  }
+}
+
 .name__input {
-  display: block;
+  display: flex;
+  flex-grow: 1;
   border: none;
   border-bottom: 2px solid $secondary;
   text-align: left;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  width: 260px;
-  margin-bottom: 22px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    border-radius: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .name {
     display: flex;
-    padding: 65px 50px 69px 50px;
+    padding: 62px 50px 14px 50px;
+    margin: 0;
+  }
+
+  .name__headline {
+    padding-top: 5px;
+    margin-right: 124px;
   }
 
   .name__title {
     display: block;
     font-size: 19px;
     line-height: 0.96;
-    padding-top: 15px;
+    padding-top: 4px;
+    margin-right: 25px;
+  }
+
+  .name__input {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 20px 12px 20px;
+    font-size: 19px;
+    letter-spacing: 0;
   }
 
   .name__list {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .name__item {
-    padding-left: 80px;
-    width: 400px;
+    margin-bottom: 11px;
+    padding: 0;
   }
 
   .name__label {
-    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name {
+    padding: 62px 225px 14px 111px;
+    max-width: 814px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .name__headline {
+    padding-top: 7px;
+    margin-right: 74px;
   }
 }

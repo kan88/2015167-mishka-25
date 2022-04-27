@@ -8,6 +8,7 @@
   margin-bottom: 29px;
   padding-left: 29px;
   padding-right: 29px;
+  padding-top: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,6 +16,23 @@
     font-size: 17px;
     line-height: 1.85;
     width: 668px;
-    margin-bottom: 63px;
+    padding-top: 68px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-text {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .form__text {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.85;
+    width: 702px;
+    padding: 115px 0 0 225px;
   }
 }
