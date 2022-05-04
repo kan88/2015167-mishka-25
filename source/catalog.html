@@ -88,12 +88,13 @@
         <ul class="cards__list card">
           <li class="card__item">
             <a class="card__link" href="#">
-              <picture class="card__picture">
-                <source srcset="/img/card-images/carddesktop-1.jpg" media="(min-width: 1150px)">
-                <source srcset="/img/card-images/cardtablet-1.jpg" media="(min-width: 768px)">
-                <source srcset="/img/card-images/cardmobile-1.jpg">
-                <img class="card__images" width="260" height="195" srcset="/img/card-images/cardmobile-1.jpg"
-                  alt="Изображение товара.">
+              <picture>
+                <source srcset="/img/card-images/carddesktop-1.jpg 1x, /img/card-images/carddesktop-1@2x.jpg 2x"
+                  media="(min-width: 1150px)">
+                <source srcset="/img/card-images/cardtablet-1.jpg 1x, /img/card-images/cardtablet-1@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <img class="card__images" width="260" height="195" src="/img/card-images/cardmobile-1.jpg"
+                  srcset="/img/card-images/cardmobile-1@2x.jpg 2x" alt="Изображение товара.">
               </picture>
             </a>
             <div class="card__wrapper">
@@ -114,12 +115,13 @@
           </li>
           <li class="card__item">
             <a class="card__link" href="#">
-              <picture class="card__picture">
-                <source srcset="/img/card-images/carddesktop-2.jpg" media="(min-width: 1150px)">
-                <source srcset="/img/card-images/cardtablet-2.jpg" media="(min-width: 768px)">
-                <source srcset="/img/card-images/cardmobile-2.jpg">
-                <img class="card__images" width="260" height="195" srcset="/img/card-images/cardmobile-2.jpg"
-                  alt="Изображение товара.">
+              <picture>
+                <source srcset="/img/card-images/carddesktop-2.jpg 1x, /img/card-images/carddesktop-2@2x.jpg 2x"
+                  media="(min-width: 1150px)">
+                <source srcset="/img/card-images/cardtablet-2.jpg 1x, /img/card-images/cardtablet-2@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <img class="card__images" width="260" height="195" src="/img/card-images/cardmobile-2.jpg"
+                  srcset="/img/card-images/cardmobile-2@2x.jpg 2x" alt="Изображение товара.">
               </picture>
             </a>
             <div class="card__wrapper">
@@ -140,12 +142,13 @@
           </li>
           <li class="card__item">
             <a class="card__link" href="#">
-              <picture class="card__picture">
-                <source srcset="/img/card-images/carddesktop-3.jpg" media="(min-width: 1150px)">
-                <source srcset="/img/card-images/cardtablet-3.jpg" media="(min-width: 768px)">
-                <source srcset="/img/card-images/cardmobile-3.jpg">
-                <img class="card__images" width="260" height="195" srcset="/img/card-images/cardmobile-3.jpg"
-                  alt="Изображение товара.">
+              <picture>
+                <source srcset="/img/card-images/carddesktop-3.jpg 1x, /img/card-images/carddesktop-3@2x.jpg 2x"
+                  media="(min-width: 1150px)">
+                <source srcset="/img/card-images/cardtablet-3.jpg 1x, /img/card-images/cardtablet-3@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <img class="card__images" width="260" height="195" src="/img/card-images/cardmobile-3.jpg"
+                  srcset="/img/card-images/cardmobile-3@2x.jpg 2x" alt="Изображение товара.">
               </picture>
             </a>
             <div class="card__wrapper">
@@ -171,7 +174,14 @@
       <div class="video-section__wrapper video">
         <h3 class="video__title">Процесс производства</h3>
         <div class="video__play">
-          <img class="video__image" src="/img/video.jpg" alt="Видео процесса производства" width="260" height="150">
+          <picture>
+            <source srcset="/img/video/video-desktop.jpg 1x, /img/video/video-desktop@2x.jpg 2x"
+              media="(min-width: 1150px)">
+            <source srcset="/img/video/video-tablet.jpg 1x, /img/video/video-tablet@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <img class="video__image" src="/img/video/video-mobile.jpg" srcset="/img/video/video-mobile@2x.jpg 2x"
+              alt="Видео процесса производства" width="260" height="150">
+          </picture>
           <button class="video__button" type="button" aria-label="Воспроизвести видео."></button>
         </div>
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
@@ -182,7 +192,7 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper footer-section">
-      <a class="footer-section__logo footer-logo" href="#">
+      <a class="footer-section__logo footer-logo" href="index.html">
         <span class="visually-hidden">Интернет-магазин Мишка.</span>
         <svg class="footer-logo__icon" width="102" height="35" viewBox="0 0 102 35" fill="none"
           xmlns="http://www.w3.org/2000/svg">

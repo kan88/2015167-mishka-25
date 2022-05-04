@@ -21,6 +21,7 @@
   display: block;
   height: 195px;
   width: 260px;
+  background-color: $senary;
 }
 
 
@@ -35,6 +36,10 @@
 .card__title-link {
   text-decoration: none;
   color: $secondary;
+}
+
+.card__images {
+  height: 195px;
 }
 
 .card__title {

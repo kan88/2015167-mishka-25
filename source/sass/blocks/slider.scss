@@ -21,6 +21,10 @@
     background-color: $tertiary;
     background-size: 350px 457px;
     padding: 0 50px 178px 50px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-background@2x.jpg");
+    }
   }
 
   .slider__list {
@@ -37,7 +41,6 @@
 @media (min-width: $desktop-width) {
   .slider {
     padding: 0 50px 260px 175px;
-    left: 50px;
     position: relative;
   }
 }
