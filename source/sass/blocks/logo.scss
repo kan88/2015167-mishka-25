@@ -5,6 +5,11 @@
 .logo__icon {
   height: 79px;
   fill: $secondary;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .logo:hover .logo__icon {
@@ -18,12 +23,29 @@
 @media (min-width: $tablet-width) {
   .logo__icon {
     height: 89px;
+
+    &--desktop,
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo__icon {
-    height: 89px;
     order: 2;
+
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
