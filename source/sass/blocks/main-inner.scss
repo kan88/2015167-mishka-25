@@ -8,6 +8,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-inner::before {
+    content: "";
+    background-image: url("../img/decor-icon/zigzag-fill.svg");
+    position: absolute;
+    height: 24px;
+    width: 100%;
+    bottom: 80px;
+    left: 0;
+  }
+
   .main-inner__title {
     font-size: 43px;
     padding-top: 99px;
@@ -15,6 +25,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-inner::before {
+    content: "";
+    background-image: url("../img/decor-icon/zigzag-fill-desktop.svg");
+    height: 34px;
+    bottom: -10px;
+  }
+
   .main-inner__title {
     font-size: 53px;
     padding-bottom: 92px;

@@ -97,6 +97,10 @@
     margin-bottom: 61px;
   }
 
+  .reviews__text br {
+    display: none;
+  }
+
   .reviews__author-social {
     font-size: 17px;
     margin: 0;
@@ -158,7 +162,7 @@
     background-image: url("../img/decor-icon/zigzag-line-desktop.svg");
     position: absolute;
     left: 0;
-    right: 100px;
+    right: 50px;
     bottom: 75px;
     height: 23px;
   }
