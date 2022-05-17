@@ -65,6 +65,10 @@
   display: flex;
 }
 
+.main-header__wrapper--nojs .main-header__toggle {
+  display: none;
+}
+
 .main-header__wrapper--nojs .main-nav__user {
   display: flex;
 }
